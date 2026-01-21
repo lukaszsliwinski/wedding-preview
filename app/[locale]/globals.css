@@ -1,0 +1,53 @@
+@import 'tailwindcss';
+
+@theme inline {
+  --breakpoint-xs: 28rem;
+
+  --font-inter: var(--font-inter);
+  --font-alice: var(--font-alice);
+  --font-alex-brush: var(--font-alex-brush);
+
+  --color-theme1: #e5c366;
+  --color-theme2: #2c424a;
+  --color-paragraph: #7a7a7a;
+  --color-header: #515151;
+  --color-background: #f4f4f4;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-alice);
+}
+
+.picture-frame {
+  position: relative;
+  display: inline-block;
+}
+
+/* Bottom frame */
+.picture-frame::before {
+  content: '';
+  position: absolute;
+  bottom: -4px;
+  right: 0;
+  margin-right: -4px;
+  width: calc(65% + 4px);
+  height: 2px;
+  background: var(--color-theme1);
+}
+
+/* Right frame */
+.picture-frame::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  right: -4px;
+  margin-bottom: -4px;
+  width: 2px;
+  height: calc(65% + 4px);
+  background: var(--color-theme1);
+}

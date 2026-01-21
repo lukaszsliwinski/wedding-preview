@@ -1,0 +1,177 @@
+'use client';
+
+import { useEffect, useState } from 'react';
+import { useTranslations } from 'next-intl';
+import LanguageSwitcher from '@/components/LanguageSwitcher';
+import { motion, useAnimation } from 'framer-motion';
+
+interface TimeLeft {
+  days: number;
+  hours: number;
+  minutes: number;
+  seconds: number;
+}
+
+export default function Landing() {
+  const [mounted, setMounted] = useState(false);
+
+  useEffect(() => {
+    setMounted(true);
+  }, []);
+
+  const t = useTranslations('landing');
+
+  const targetDate = new Date('2027-09-04T15:00:00');
+  const [timeLeft, setTimeLeft] = useState<TimeLeft>(calculateTimeLeft());
+
+  function calculateTimeLeft(): TimeLeft {
+    const now = new Date().getTime();
+    const difference = targetDate.getTime() - now;
+
+    if (difference <= 0) {
+      return { days: 0, hours: 0, minutes: 0, seconds: 0 };
+    }
+
+    return {
+      days: Math.floor(difference / (1000 * 60 * 60 * 24)),
+      hours: Math.floor((difference / (1000 * 60 * 60)) % 24),
+      minutes: Math.floor((difference / (1000 * 60)) % 60),
+      seconds: Math.floor((difference / 1000) % 60)
+    };
+  }
+
+  useEffect(() => {
+    const timer = setInterval(() => {
+      setTimeLeft(calculateTimeLeft());
+    }, 1000);
+
+    return () => clearInterval(timer);
+  }, []);
+
+  // ANIMATIONS //
+
+  // animation controls
+  const barTextControls = useAnimation();
+  const barBgControls = useAnimation();
+  const timerControls = useAnimation();
+
+  // motion variants
+  const cubic = [0.25, 0.1, 0.25, 1] as [number, number, number, number];
+
+  const barTextVariants = {
+    hidden: { opacity: 0, scale: 0 },
+    visible: {
+      opacity: 1,
+      scale: 1.4,
+      transition: {
+        type: 'spring' as const,
+        stiffness: 80,
+        damping: 15,
+        mass: 1.6
+      }
+    },
+    standardSize: {
+      scale: 1,
+      transition: {
+        duration: 1,
+        ease: cubic
+      }
+    }
+  };
+
+  const barBgVariants = {
+    hFull: { height: '100%', marginBottom: '0' },
+    hFit: {
+      height: 'auto',
+      marginBottom: '30vh',
+      transition: {
+        duration: 1.2,
+        ease: cubic,
+        delay: 1.2
+      }
+    }
+  };
+
+  const timerVariants = {
+    hidden: { opacity: 0 },
+    visible: {
+      opacity: 1,
+      transition: {
+        duration: 0.4,
+        ease: cubic,
+        staggerChildren: 0.12,
+        delayChildren: 0.05
+      }
+    }
+  };
+
+  const timerItemVariants = {
+    hidden: { opacity: 0 },
+    visible: {
+      opacity: 1,
+      y: 0,
+      transition: {
+        duration: 0.35,
+        ease: cubic
+      }
+    }
+  };
+
+  // animation queue
+  useEffect(() => {
+    (async () => {
+      barTextControls.start('visible').then(() => barTextControls.start('standardSize'));
+
+      await barBgControls.start('hFit');
+      await timerControls.start('visible');
+    })();
+  }, []);
+
+  return (
+    <section
+      className="relative flex justify-center items-end w-screen h-screen bg-cover bg-top bg-no-repeat bg-[url('@/public/landing.webp')]"
+      id="landing"
+    >
+      <LanguageSwitcher />
+      <motion.div
+        className="flex flex-col items-center justify-center w-full gap-y-2 sm:gap-y-4 text-white bg-white/10 backdrop-blur-lg font-alice"
+        animate={barBgControls}
+        variants={barBgVariants}
+        initial="hFull"
+      >
+        <motion.div
+          className="text-center mt-4 sm:mt-5 mx-2"
+          animate={barTextControls}
+          variants={barTextVariants}
+          initial="hidden"
+        >
+          <h1 className="text-3xl sm:text-5xl text-center">
+            Karolina <br className="md:hidden" />
+            <span className="text-xl md:text-4xl">&</span>
+            <br className="md:hidden" /> Valentino
+          </h1>
+          <h2 className="text-lg sm:text-2xl">{t('date')}</h2>
+        </motion.div>
+        <motion.div
+          className="max-md:grid max-md:grid-cols-4 max-md:gap-4 md:flex md:max-w-3xl lg:max-w-5xl mb-2 sm:mb-3 mx-auto"
+          initial="hidden"
+          animate={timerControls}
+          variants={timerVariants}
+        >
+          {Object.entries(timeLeft).map(([key, value]) => (
+            <motion.div
+              key={key}
+              variants={timerItemVariants}
+              className="max-md:flex max-md:flex-col max-md:items-center mb-2"
+            >
+              <span className="inline-block min-w-13 md:mr-2 md:ml-3 text-center md:text-right text-xl xs:text-2xl sm:text-3xl">
+                {mounted ? value : '00'}
+              </span>
+              <span className="text-sm sm:text-base mt-3 uppercase">{t(key)}</span>
+            </motion.div>
+          ))}
+        </motion.div>
+      </motion.div>
+    </section>
+  );
+}

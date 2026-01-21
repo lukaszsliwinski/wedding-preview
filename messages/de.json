@@ -1,0 +1,207 @@
+{
+  "landing": {
+    "date": "4. September 2027",
+    "days": "tage",
+    "hours": "stunden",
+    "minutes": "minuten",
+    "seconds": "sekunden"
+  },
+  "about": {
+    "header": "Über uns",
+    "description": "Als wir uns 2022 kennenlernten, wurde uns schnell klar, dass zwischen uns mehr war als der gewöhnliche Büroalltag. Ein paar Reisen in die Berge, unser gemeinsamer Antrieb für sportliche Herausforderungen und eine ähnliche Lebensauffassung brachten uns einander näher und machten uns unzertrennlich."
+  },
+  "invitation": {
+    "header": "Karolina & Valentino",
+    "text1": "Wir freuen uns sehr, euch zu unserer Hochzeit einzuladen, die inmitten der malerischen Landschaft der Beskiden stattfinden wird",
+    "text_wider": "",
+    "text2": "4 September 2027 um 15:00 Uhr\nHotel Złoty Groń in Istebna, Polen"
+  },
+  "localization": {
+    "header": "Wo und wann",
+    "cards": {
+      "1": {
+        "header": "Zeremonie",
+        "description": "Freitag, 4.09.2027\num 15:00 Uhr\nTerrasse des Hotels\nZłoty Groń in Istebna"
+      },
+      "2": {
+        "header": "Hochzeit",
+        "description": "Freitag, 4.09.2027\num 15:45 Uhr\nHochzeitssaal des Hotels\nZłoty Groń in Istebna"
+      },
+      "3": {
+        "header": "Hotel"
+      },
+      "4": {
+        "header": "Unterkunft",
+        "description": {
+          "1": "Wir freuen uns, euch mitteilen zu können, dass eine Übernachtung im Hotel Złoty Groń möglich ist. Die Preise für Hochzeitsgäste sind wie folgt:",
+          "2b": "700 PLN/Nacht",
+          "2": "Doppelzimmer",
+          "3b": "300 PLN/Nacht pro Person",
+          "3": "Drei- oder Vierbettzimmer",
+          "4": "Für Gäste, die an einer Übernachtung im Hotel interessiert sind, bitten wir um Kontaktaufnahme mit dem Brautpaar. Die Reservierungen werden von den Hochzeitsorganisatoren vorgenommen, um den ausgehandelten Preis zu gewährleisten. Die Zahlung für den Aufenthalt kann per Banküberweisung auf das vom Brautpaar angegebene Konto, in bar oder per Blik erfolgen.",
+          "5i": "Der Übernachtungspreis kann sich ändern, wenn die Buchung direkt im Hotel vorgenommen wird und nicht über das Brautpaar erfolgt.",
+          "6b": "Check-in:",
+          "6": "15:00",
+          "7b": "Check-out:",
+          "7": "12:00"
+        }
+      }
+    }
+  },
+  "weddinginfo": {
+    "header": "Zusätzliche Hochzeitsinformationen",
+    "cards": {
+      "1": {
+        "icon": "dresscode",
+        "header": "Dress code",
+        "description": "Wir ermutigen euch, ein Outfit zu wählen, das eurem eigenen Stil und Geschmack entspricht, zugleich aber zum Charakter der Feier passt und während der gesamten Veranstaltung vollen Tragekomfort bietet."
+      },
+      "2": {
+        "icon": "presents",
+        "header": "Geschenke",
+        "description": "Aufgrund des Aufwands, der mit der weiten Anreise zur Hochzeit und Feier verbunden ist, erwarten wir keine Geschenke. Das schönste Geschenk für uns ist eure Anwesenheit, eure guten Wünsche und das gemeinsame Feiern.\n\nSolltet ihr dennoch ein Geschenk überreichen wollen, hier ein kleiner Hinweis:"
+      },
+      "3": {
+        "icon": "transport",
+        "header": "Transport",
+        "description": "Für den Komfort der Gäste, die nicht in Istebna übernachten, stellen wir nach dem Ende der Hochzeitsfeier einen Transport nach Rybnik und Kattowitz zur Verfügung."
+      },
+      "4": {
+        "icon": "attractions",
+        "header": "Attraktionen",
+        "description": {
+          "1": "Eine sichere Spielfläche für Kinder",
+          "2": "Kinderanimation von 17:00 bis 20:00 Uhr",
+          "3": "Essen, Getränke und ein Buffet-Barbereich, der während der gesamten Hochzeitsfeier verfügbar ist",
+          "4": "DJ und musikalische Begleitung während der gesamten Feier",
+          "5": "Fotograf",
+          "6": "Fotobox",
+          "7": "Weitere Attraktionen (eine Überraschung!)"
+        }
+      }
+    },
+    "agenda": {
+      "header": "Tagesablauf der Hochzeitsfeier",
+      "items": {
+        "1": {
+          "hour": "15:00",
+          "description": "Trauungszeremonie auf der Terrasse neben dem Festsaal"
+        },
+        "2": {
+          "hour": "15:20",
+          "description": "Glückwünsche und offizielle Begrüßung des Brautpaares"
+        },
+        "3": {
+          "hour": "16:00",
+          "description": "Hochzeitsessen"
+        },
+        "4": {
+          "hour": "16:45",
+          "description": "Offizieller Beginn der Feier mit dem DJ"
+        },
+        "5": {
+          "hour": "17:30",
+          "description": "Fotosession"
+        },
+        "6": {
+          "hour": "19:00",
+          "description": "Zweites warmes Gericht (serviert)"
+        },
+        "7": {
+          "hour": "20:00",
+          "description": "Hochzeitstorte"
+        },
+        "8": {
+          "hour": "22:00",
+          "description": "Drittes warmes Gericht (serviert)"
+        },
+        "9": {
+          "hour": "23:00",
+          "description": "Rote-Borschtsch-Suppe und Pastetchen, serviert als warmes Buffet"
+        },
+        "10": {
+          "hour": "00:00",
+          "description": "Oczepiny (traditioneller Mitternachtsbrauch)"
+        },
+        "21": {
+          "description": "Transport nach Rybnik und Kattowitz nach Veranstaltungsende"
+        }
+      }
+    },
+    "confirmation": {
+      "header": "Teilnahmebestätigung",
+      "description1": "Wir bitten euch, das folgende Formular auszufüllen. Es hilft uns, die individuellen Bedürfnisse unserer Gäste kennenzulernen und die Hochzeitsfeier bestmöglich zu organisieren, damit sich alle rundum wohlfühlen.",
+      "description2_1": "Bitte bestätigt eure Teilnahme bis zum ",
+      "date": "31. Mai 2027",
+      "description2_2": ", telefonisch."
+    }
+  },
+  "silesia": {
+    "header": "Willkommen in Polen, willkommen in Oberschlesien!",
+    "sections": {
+      "1": {
+        "header": "Willkommen in Polen!",
+        "description": "Herzlich willkommen in Polen – dem Land der Könige und Slawen, einem Land voller Geschichte, malerischer Landschaften und einzigartiger Kultur. Polen begeistert mit seinen Kontrasten: von majestätischen Bergen und stillen Seen über weite Strände und die stürmische Ostsee bis hin zu lebhaften Städten voller Leben und Energie. Ein besonders warmes Willkommen gilt euch in Oberschlesien, einer absolut einzigartigen Region voller Tradition, industriellem Stolz und kultureller Vielfalt, in der sich polnische, deutsche und tschechische Einflüsse miteinander verbinden."
+      },
+      "2": {
+        "header": "Oberschlesien",
+        "description": "Dieses Gebiet ist bekannt für seine Schwerindustrie, insbesondere für den Steinkohlebergbau. Unter der Oberfläche Schlesiens verbergen sich große Vorkommen des sogenannten „schwarzen Goldes“, das seit Jahrhunderten die Wirtschaft, die Architektur und den Charakter der Menschen prägt. Das Oberschlesische Steinkohlenbecken umfasst rund 4.500 km² und ist eines der größten Kohleabbaugebiete Europas. In der Region treten typische „Bergbauphänomene“ auf – unebene Straßen (sogenannte Bergschäden), gelegentliche spürbare Erderschütterungen und charakteristische Industriebauten."
+      },
+      "3": {
+        "header": "Kultur und Tradition",
+        "description": "Oberschlesien besitzt eine reiche Kultur, eine eigene Sprache, einzigartige Bräuche und eine geschmackvolle Küche. Die Städte der Region bilden ein dichtes Industriegebiet mit rund 40 urbanen Zentren, die gemeinsam das pulsierende Herz Schlesiens bilden. Es ist ein Ort, an dem Tradition auf Moderne trifft – wo die Geschichte des Bergbaus mit dem Alltag der Menschen verschmilzt, inspiriert, bildet und zum Entdecken einlädt."
+      },
+      "4": {
+        "header": "Schlesien und die Beskiden",
+        "description": "Doch Schlesien ist nicht nur Industrie – im Süden breiten sich die Beskiden aus: eine malerische Gebirgskette voller Wanderwege, Wälder und atemberaubender Landschaften, die zum Entspannen und zum Kontakt mit der Natur einladen. Wir hoffen, dass euer Aufenthalt hier euch nicht nur die Teilnahme an unserer Feier ermöglicht, sondern euch auch die Gelegenheit gibt, die besondere Atmosphäre, Kultur und Gastfreundschaft Schlesiens zu erleben – und die Schönheit sowie Einzigartigkeit dieses Ortes zu entdecken."
+      }
+    }
+  },
+  "goodtoknow": {
+    "header": "Gut zu wissen",
+    "subheader": "Bei der Planung eines Besuchs in Polen lohnt es sich, einige grundlegende Regeln und praktische Informationen zu kennen, die den Aufenthalt angenehmer und sicherer machen.",
+    "cards": {
+      "1": {
+        "header": "Währung und Zahlungen",
+        "description": "Die offizielle Währung ist der polnische Złoty (PLN). In den meisten Geschäften und Restaurants werden Kartenzahlungen unabhängig vom Betrag akzeptiert."
+      },
+      "2": {
+        "header": "Telefonie und Internet",
+        "description": "In Polen ist das 4G-Netz weit verbreitet, in größeren Städten steht auch 5G zur Verfügung. WLAN ist in Hotels, Restaurants und Cafés allgemein zugänglich."
+      },
+      "3": {
+        "header": "Trinkgeld",
+        "description": "In Restaurants ist es üblich, etwa 10 % des Rechnungsbetrags zu hinterlassen, wenn der Service zufriedenstellend war. Es ist jedoch keine Pflicht."
+      },
+      "4": {
+        "header": "Autobahnen",
+        "description": "Eine Vignette ist nicht erforderlich – die Nutzung polnischer Autobahnen ist kostenlos, mit Ausnahme der privat betriebenen Strecken. In Oberschlesien betrifft dies die Strecke Katowice–Kraków, die insgesamt 34 PLN kostet. Die Maut kann an den Schranken mit Karte bezahlt werden."
+      },
+      "5": {
+        "header": "Tagfahrlicht",
+        "description": "Das Fahren mit eingeschaltetem Licht ist rund um die Uhr Pflicht – unabhängig von Tageszeit oder Wetterbedingungen."
+      },
+      "6": {
+        "header": "Radarkontrollen",
+        "description": "Geschwindigkeitsradare sind immer mit entsprechenden Verkehrsschildern gekennzeichnet, häufig finden jedoch auch verdeckte Polizeikontrollen statt."
+      },
+      "7": {
+        "header": "Transport",
+        "description": "In Städten ist der öffentliche Nahverkehr gut ausgebaut. Taxis sollten idealerweise über Apps bestellt oder von lizenzierten Anbietern genutzt werden."
+      },
+      "8": {
+        "header": "Notrufnummern",
+        "description": "Die allgemeine Notrufnummer 112 gilt im gesamten Land und wird auch auf Englisch bedient."
+      },
+      "9": {
+        "header": "Sicherheit",
+        "description": "Polen ist ein sicheres Land, dennoch sollte man wie überall übliche Vorsichtsmaßnahmen treffen, insbesondere in belebten Gegenden."
+      }
+    }
+  },
+  "footer": {
+    "header":"Kontaktinformationen",
+    "tel": "Tel.",
+    "text": "Bis bald!"
+  }
+}

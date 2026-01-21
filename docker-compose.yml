@@ -1,0 +1,28 @@
+services:
+  weddingpreview:
+    build: .
+    container_name: weddingpreview
+    restart: always
+    env_file:
+      - .env
+    environment:
+      - NODE_ENV=${NODE_ENV}
+      - PORT=${PORT}
+    labels:
+      - "traefik.enable=true"
+      - "traefik.http.routers.weddingpreview.rule=Host(`${DOMAIN}`) || Host(`www.${DOMAIN}`)"
+      - "traefik.http.routers.weddingpreview.entrypoints=websecure"
+      - "traefik.http.routers.weddingpreview.tls.certresolver=le"
+      - "traefik.http.services.weddingpreview.loadbalancer.server.port=${PORT}"
+      - "traefik.http.middlewares.weddingpreview-hsts.headers.stsSeconds=31536000"
+      - "traefik.http.middlewares.weddingpreview-hsts.headers.stsIncludeSubdomains=true"
+      - "traefik.http.middlewares.weddingpreview-hsts.headers.stsPreload=true"
+      - "traefik.http.routers.weddingpreview.middlewares=weddingpreview-hsts@docker"
+    networks:
+      - web
+    expose:
+      - "${PORT}"
+
+networks:
+  web:
+    external: true

@@ -1,0 +1,207 @@
+{
+  "landing": {
+    "date": "September 4, 2027",
+    "days": "days",
+    "hours": "hours",
+    "minutes": "minutes",
+    "seconds": "seconds"
+  },
+  "about": {
+    "header": "About Us",
+    "description": "When we met in 2022, we quickly realized there was more between us than the routine of office life. A few trips to the mountains, a shared drive for athletic challenges, and a similar outlook on life drew us together and made us inseparable."
+  },
+  "invitation": {
+    "header": "Karolina & Valentino",
+    "text1": "We are delighted to invite you to our wedding, which will take place amidst the picturesque scenery of the Beskidy region",
+    "text_wider": "",
+    "text2": "September 4, 2027 at 03:00 PM\nHotel Złoty Groń in Istebna, Poland"
+  },
+  "localization": {
+    "header": "Where and When",
+    "cards": {
+      "1": {
+        "header": "Wedding ceremony",
+        "description": "Friday, 4.09.2027\nat 3:00 PM\nWedding terrace of hotel\nZłoty Groń in Istebna"
+      },
+      "2": {
+        "header": "Wedding party",
+        "description": "Friday, 4.09.2027\nat 3:45 PM\nWedding hall in hotel\nZłoty Groń in Istebna"
+      },
+      "3": {
+        "header": "Hotel"
+      },
+      "4": {
+        "header": "Accommodation",
+        "description": {
+          "1": "We are pleased to inform you that accommodation at Hotel Złoty Groń is available. The rates for our wedding guests are as follows:",
+          "2b": "700 PLN/night",
+          "2": "double room",
+          "3b": "300 PLN/night per person",
+          "3": "triple or quadruple room",
+          "4": "Guests interested in staying at the hotel are kindly asked to contact Karolina or Valentino. Reservations will be arranged by the wedding organizers to secure the negotiated room rates. Payment for the stay can be made to the Bride and Groom via bank transfer, cash, or BLIK.",
+          "5i": "Please note that room rates may differ if booking directly with the hotel, independent of the reservations arranged by the Bride and Groom.",
+          "6b": "Check in:",
+          "6": "3:00 PM",
+          "7b": "Check out:",
+          "7": "12:00 PM"
+        }
+      }
+    }
+  },
+  "weddinginfo": {
+    "header": "Additional Wedding Information",
+    "cards": {
+      "1": {
+        "icon": "dresscode",
+        "header": "Dress Code",
+        "description": "We encourage you to choose an outfit that reflects your own style and taste, while also being appropriate for the occasion and ensuring comfort throughout the entire event."
+      },
+      "2": {
+        "icon": "presents",
+        "header": "Presents",
+        "description": "Due to the effort involved in traveling a long distance to attend our wedding, we do not expect gifts. The greatest gift for us will be your presence, heartfelt wishes, and celebrating together. If you do wish to give a gift, here is a small suggestion:"
+      },
+      "3": {
+        "icon": "transport",
+        "header": "Transport",
+        "description": "For the convenience of guests who are not staying in Istebna, transportation to Rybnik and Katowice will be provided after the wedding party."
+      },
+      "4": {
+        "icon": "attractions",
+        "header": "Attractions",
+        "description": {
+          "1": "A safe play area for children",
+          "2": "A children’s animator available from 5:00 PM to 8:00 PM",
+          "3": "Food, drinks, and a buffet bar available throughout the entire wedding", 
+          "4": "DJ and music provided for the duration of the wedding",
+          "5": "Photographer",
+          "6": "Photo booth",
+          "7": "Others (a surprise!)"
+        }
+      }
+    },
+    "agenda": {
+      "header": "Agenda",
+      "items": {
+        "1": {
+          "hour": "3:00 PM",
+          "description": "Wedding ceremony on the terrace by the wedding hall"
+        },
+        "2": {
+          "hour": "3:20 PM",
+          "description": "Congratulations and official welcome of the Bride and Groom"
+        },
+        "3": {
+          "hour": "4:00 PM",
+          "description": "Wedding lunch"
+        },
+        "4": {
+          "hour": "4:45 PM",
+          "description": "Official start of the wedding party with the DJ"
+        },
+        "5": {
+          "hour": "5:30 PM",
+          "description": "Photo session"
+        },
+        "6": {
+          "hour": "7:00 PM",
+          "description": "Second hot meal served"
+        },
+        "7": {
+          "hour": "8:00 PM",
+          "description": "Wedding cake"
+        },
+        "8": {
+          "hour": "10:00 PM",
+          "description": "Third hot meal served"
+        },
+        "9": {
+          "hour": "11:00 PM",
+          "description": "Red borscht and pastries served as a hot buffet"
+        },
+        "10": {
+          "hour": "12:00 AM",
+          "description": "Oczepiny (traditional Polish wedding cap ceremony)"
+        },
+        "21": {
+          "description": "Transportation to Rybnik and Katowice"
+        }
+      }
+    },
+    "confirmation": {
+      "header": "Confirmation of Attendance",
+      "description1": "We kindly ask you to complete the form below, which will allow us to understand the individual needs of our guests. The information collected will help us prepare the wedding in the best possible way, ensuring comfort for all attendees.",
+      "description2_1": "We also kindly ask you to confirm your attendance by ", 
+      "date": "May 31, 2027",
+      "description2_2": ", contacting us by phone."
+    }
+  },
+  "silesia": {
+    "header": "Welcome to Poland, welcome to Upper Silesia!",
+    "sections": {
+      "1": {
+        "header": "Welcome to Poland!",
+        "description": "We warmly welcome you to Poland, the land of kings and Slavs, a country with a rich history, picturesque landscapes, and a unique culture. Poland is full of contrasts, from majestic mountains and tranquil lakes to wide sandy beaches, the sometimes turbulent Baltic Sea, and vibrant cities. We especially welcome you to Upper Silesia, a truly unique region full of tradition, industrial pride, and where Polish, German, and Czech influences intertwine."
+      },
+      "2": {
+        "header": "Upper Silesia",
+        "description": "This area is famous for heavy industry, particularly coal mining. Beneath the surface of Silesia lie deposits of “black gold,” which have shaped the economy, city architecture, and the character of its inhabitants for centuries. The Upper Silesian Coal Basin covers approximately 4,500 km², making it one of the largest coal mining areas in Europe. The region also features mining phenomena, such as road irregularities known as subsidence, occasional perceptible tremors, and distinctive industrial-style buildings."
+      },
+      "3": {
+        "header": "Culture and tradition",
+        "description": "Upper Silesia has a rich culture, its own language, unique customs, and a flavorful cuisine. Silesian cities form an industrial agglomeration, comprising around 40 developed urban centers, which together create the vibrant heart of the region. It is a place where tradition meets modernity, and industrial history coexists with the daily life of its residents, while simultaneously educating, inspiring, and inviting exploration."
+      },
+      "4": {
+        "header": "Silesia and Beskids",
+        "description": "Upper Silesia is not just about industry — in the southern part of the region lie the picturesque Beskid Mountains, full of hiking trails, forests, and stunning landscapes, providing the perfect place to relax and connect with nature. We hope that your stay here will allow you not only to participate in our celebration but also to experience the unique atmosphere, meet the people, and discover the culture and beauty of Upper Silesia."
+      }
+    }
+  },
+  "goodtoknow": {
+    "header": "Good to Know",
+    "subheader": "When visiting Poland, it’s useful to be aware of a few basic rules and practical tips to ensure a comfortable and safe stay.",
+    "cards": {
+      "1": {
+        "header": "Currency and payments",
+        "description": "The official currency is the Polish złoty (PLN). Credit and debit cards are widely accepted in most places."
+      },
+      "2": {
+        "header": "Phone and internet",
+        "description": "Poland has 4G coverage, and 5G is available in larger cities. Wi-Fi is widely available in hotels, restaurants, and cafés."
+      },
+      "3": {
+        "header": "Tipping",
+        "description": "It is customary to leave around 10% of the bill in restaurants if service was satisfactory, but it is not obligatory."
+      },
+      "4": {
+        "header": "Highways",
+        "description": "There is no need for a vignette; most highways are free to use except for certain private toll sections. In Upper Silesia, the Katowice–Kraków highway section costs 34 PLN, and payment by card is possible at toll booths."
+      },
+      "5": {
+        "header": "Daytime headlights",
+        "description": "Driving with daytime headlights on is mandatory at all times, regardless of the time of day or weather conditions."
+      },
+      "6": {
+        "header": "Speed cameras and limits",
+        "description": "Speed cameras are always marked with signs, but police may also monitor speed from hidden positions."
+      },
+      "7": {
+        "header": "Transport",
+        "description": "Public transport is well developed in cities, and taxis should be booked through apps or licensed providers."
+      },
+      "8": {
+        "header": "Emergency numbers",
+        "description": "The general emergency number 112 works throughout Poland and is also serviced in English."
+      },
+      "9": {
+        "header": "Safety",
+        "description": "Poland is a safe country, but it is always advisable to take standard precautions, especially in crowded areas."
+      }
+    }
+  },
+  "footer": {
+    "header":"Contact Information",
+    "tel": "Tel.",
+    "text": "See you soon!"
+  }
+}

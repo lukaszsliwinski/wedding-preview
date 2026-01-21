@@ -1,0 +1,207 @@
+{
+  "landing": {
+    "date": "4 września 2027",
+    "days": "dni",
+    "hours": "godziny",
+    "minutes": "minuty",
+    "seconds": "sekundy"
+  },
+  "about": {
+    "header": "O nas",
+    "description": "Poznaliśmy się w pracy w 2022 roku i niemal od razu odkryliśmy, że łączy nas znacznie więcej niż zawodowe obowiązki. Wspólna pasja do gór, wszelkich wyzwań sportowych, zdrowego stylu życia oraz podobne spojrzenie na świat sprawiły, że staliśmy się nierozłączni. Od tamtej pory budujemy naszą wspólną historię opartą na wzajemnym szacunku, miłości i radości z małych rzeczy w życiu codziennym, stawiając czoła przeciwnościom losu. Najpiękniejszym potwierdzeniem tej więzi, a zarazem początkiem nowego etapu życia, będzie dzień naszego ślubu. To właśnie w tym dniu rozpocznie się nasza wspólna droga, gdzie na dobre połaczymy siłę dwóch kultur poskiej i szwajcarskiej, czerpiąc z nich to, co najlepsze."
+  },
+  "invitation": {
+    "header": "Karolina i Valentino",
+    "text1": "Mają zaszczyt zaprosić",
+    "text_wider": "na uroczystość zaślubin",
+    "text2": "4 września 2027 roku o godz. 15:00\nHotel Złoty Groń w Istebnej"
+  },
+  "localization": {
+    "header": "Gdzie i kiedy",
+    "cards": {
+      "1": {
+        "header": "Ceremonia",
+        "description": "Piątek, 4.09.2027\no godzinie 15:00\nTaras hotelu\nZłoty Groń w Istebnej"
+      },
+      "2": {
+        "header": "Wesele",
+        "description": "Piątek, 4.09.2027\n15:30 - \u221E\nSala bankietowa hotelu\nZłoty Groń w Istebnej"
+      },
+      "3": {
+        "header": "Hotel"
+      },
+      "4": {
+        "header": "Zakwaterowanie",
+        "description": {
+          "1": "Z przyjemnością informujemy, że istnieje możliwość rezerwacji noclegu w Hotelu Złoty Groń. Dla Gości weselnych obowiązuje następująca oferta:",
+          "2b": "700 zł / noc",
+          "2": "pokój dwuosobowy",
+          "3b": "300 zł / noc od osoby",
+          "3": "pokój trzy- lub czteroosobowy",
+          "4": "Osoby zainteresowane noclegiem prosimy o kontakt z Parą Młodą. Rezerwacje będą dokonywane za pośrednictwem organizatorów wesela, aby zagwarantować Państwu wynegocjowane ceny. Opłatę za pobyt można uiścić u Pary Młodej – przelewem na wskazane konto, gotówką lub BLIK\u2011iem.",
+          "5i": "Uwaga: ceny mogą różnić się w przypadku rezerwacji dokonywanych bezpośrednio w hotelu, z pominięciem puli zarezerwowanej przez Parę Młodą.",
+          "6b": "Zameldowanie:",
+          "6": "od 15:00",
+          "7b": "Wymeldowanie:",
+          "7": "do 12:00"
+        }
+      }
+    }
+  },
+  "weddinginfo": {
+    "header": "Dodatkowe informacje weselne",
+    "cards": {
+      "1": {
+        "icon": "dresscode",
+        "header": "Dress code",
+        "description": "Zachęcamy do wyboru stroju dopasowanego do własnego stylu i gustu, tak aby jednocześnie pasował do charakteru uroczystości i zapewniał pełną wygodę przez cały czas trwania wydarzenia."
+      },
+      "2": {
+        "icon": "presents",
+        "header": "Prezenty",
+        "description": "Ze względu na wysiłek związany z daleką podróżą na nasz ślub i wesele, nie oczekujemy prezentów. Najcenniejszym podarunkiem będzie dla nas Wasza obecność, serdeczne życzenia i wspólna zabawa. Jeśli jednak mimo to zechcecie obdarować nas upominkiem, poniżej zamieszczamy wskazówki:"
+      },
+      "3": {
+        "icon": "transport",
+        "header": "Transport",
+        "description": "Dla wygody Gości, którzy nie zatrzymują się w Istebnej, zapewniamy transport do Rybnika i Katowic po zakończeniu przyjęcia weselnego."
+      },
+      "4": {
+        "icon": "attractions",
+        "header": "Atrakcje",
+        "description": {
+          "1": "Bezpieczna przestrzeń do zabawy dla dzieci",
+          "2": "Animator dla dzieci w godzinach 17:00-20:00",
+          "3": "Jedzenie i picie oraz bar w formie bufetu dostępny przez cały czas trwania wesela", 
+          "4": "DJ i oprawa muzyczna przez cały czas trwania wesela",
+          "5": "Fotograf",
+          "6": "Fotobudka",
+          "7": "Inne (niespodzianka!)"
+        }
+      }
+    },
+    "agenda": {
+      "header": "Agenda",
+      "items": {
+        "1": {
+          "hour": "15:00",
+          "description": "Ceremonia zaślubin na tarasie przy sali bankietowej"
+        },
+        "2": {
+          "hour": "15:20",
+          "description": "Życzenia i oficjalne powitanie pary młodej"
+        },
+        "3": {
+          "hour": "16:00",
+          "description": "Obiad weselny"
+        },
+        "4": {
+          "hour": "16:45",
+          "description": "Oficjalne rozpoczęcie zabawy weselnej przez DJ'a"
+        },
+        "5": {
+          "hour": "17:30",
+          "description": "Sesja zdjęciowa"
+        },
+        "6": {
+          "hour": "19:00",
+          "description": "Ciepły posiłek serwowany do stołu"
+        },
+        "7": {
+          "hour": "20:00",
+          "description": "Tort"
+        },
+        "8": {
+          "hour": "22:00",
+          "description": "Ciepły posiłek serwowany do stołu"
+        },
+        "9": {
+          "hour": "23:00",
+          "description": "Ciepły posiłek w formie bufetu"
+        },
+        "10": {
+          "hour": "00:00",
+          "description": "Oczepiny"
+        },
+        "21": {
+          "description": "Transport do Rybnika i Katowic"
+        }
+      }
+    },
+    "confirmation": {
+      "header": "Potwierdzenie obecności",
+      "description1": "Uprzejmie prosimy o wypełnienie poniższego formularza, dzięki któremu będziemy mogli poznać indywidualne potrzeby naszych Gości. Zgromadzone informacje pozwolą nam jak najlepiej przygotować wesele, zapewniając komfort wszystkim uczestnikom.",
+      "description2_1": "Prosimy również o potwierdzenie swojej obecności do dnia ",
+      "date": "31.05.2027",
+      "description2_2": ", kontaktując się z nami telefonicznie."
+    }
+  },
+  "silesia": {
+    "header": "Witajcie w Polsce, witajcie na Górnym Śląsku!",
+    "sections": {
+      "1": {
+        "header": "Witajcie w Polsce!",
+        "description": "Polska to kraj o niezwykle zróżnicowanej geografii — od monumentalnych gór na południu, przez rozległe niziny, zielone doliny i krainę tysiąca jezior na północy, aż po piaszczyste plaże oraz majestatyczne Morze Bałtyckie. To miejsce, gdzie dziedzictwo przodków spotyka się z nowoczesnością, a ciepło i otwartość Polaków sprawiają, że każdy odwiedzający może poczuć się tu naprawdę wyjątkowo."
+      },
+      "2": {
+        "header": "Górny Śląsk",
+        "description": "Szczególnie ciepło witamy Was na Górnym Śląsku, w regionie absolutnie wyjątkowym, pełnym tradycji, przemysłowej dumy, gdzie przenikają się wpływy polskie, niemieckie i czeskie. Obszar ten słynie z przemysłu ciężkiego, szczególnie wydobycia węgla kamiennego. Pod powieszchnią Śląska skrywają się złoża „czarnego złota”, które od wieków kształtują gospodarkę, architekturę miast i charakter mieszkańców. Samo Górnośląskie Zagłębie Węglowe zajmuje około 4 500 km² i stanowi jedno z największych pól wydobycia węgla kamiennego w Europie. W regionie tym występują tzw. fenomeny kopalniane takie jak: nierówności dróg zwane szkodami górniczymi, czasowe, odczuwalne wstrząsy ziemi czy charakterystyczne zabudowania o charakterze industrialnym. Dlatego właśnie Śląsk wyróżnia się wśród polskich regionów swoją specyficzną atmosferą i odrębną tożsamością."
+      },
+      "3": {
+        "header": "Kultura i tradycja",
+        "description": "Górny Śląsk posiada bogatą kulturę, własny język, unikalne zwyczaje oraz kuchnię pełną smaku. Miasta Śląska tworzą aglomerację przemysłową, skupiając ok 40 rozwiniętych ośrodków miejskich, jednoczesnie tworząc tętniące życiem serce regionu. To miejsce, w którym tradycja spotyka się z nowoczesnością, a historia przemysłu współistnieje z codziennym życiem mieszkańców, jednocześnie edukując, inspirując i zapraszając do odkrywania."
+      },
+      "4": {
+        "header": "Beskidy",
+        "description": "Górny Śląsk to nie tylko przemysł i bogata tradycja — w jego południowej części rozciągają się malownicze Beskidy, pełne górskich szlaków, zielonych lasów i zapierających dech w piersiach krajobrazów. Mamy nadzieję, że oprócz wspólnego świętowania naszych zaślubin uda Wam się także znaleźć chwilę na odpoczynek, spacer po górach i kontakt z pięknem przyrody, które ten region oferuje."
+      }
+    }
+  },
+  "goodtoknow": {
+    "header": "Dobrze wiedzieć",
+    "subheader": "Planując podróż do Polski, warto zapoznać się z kilkoma praktycznymi wskazówkami, które uczynią pobyt wygodnym i bezpiecznym.",
+    "cards": {
+      "1": {
+        "header": "Waluta i płatności",
+        "description": "Obowiązującą walutą jest polski złoty (PLN). W większości miejsc można płacić kartą, niezależnie od wysokości rachunku."
+      },
+      "2": {
+        "header": "Telefonia i internet",
+        "description": "W Polsce działa sieć 4G, w większych miastach dostępne jest także 5G. Wi-Fi jest powszechnie dostępne w hotelach, restauracjach i kawiarniach."
+      },
+      "3": {
+        "header": "Napiwki",
+        "description": "W restauracjach zwyczajowo zostawia się około 10% wartości rachunku, jeśli obsługa była satysfakcjonująca. Nie jest to jednak konieczne."
+      },
+      "4": {
+        "header": "Autostrady",
+        "description": "Nie ma konieczności kupowania winiety - podróżowanie autostradami w Polsce jest bezpłatne z wyjątkiem autostrad należących do firm prywatnych. Na terenie Górnego Śląska jest to autostrada na odcinku Katowice-Kraków, całkowity koszt to 34zł. Możliwa płatność kartą na bramkach autostrady."
+      },
+      "5": {
+        "header": "Światła dzienne",
+        "description": "Obowiązkowa jest jazda samochodem z włączonymi światłami dziennymi przez cały czas, bez względu na porę dnia i warunki pogodowe."
+      },
+      "6": {
+        "header": "Radary",
+        "description": "Radary kontrolujące prędkość są zawsze oznaczone odpowiednimi znakami, jednak w Polsce często spotkać można także patrole policji, które monitorują prędkość z ukrycia."
+      },
+      "7": {
+        "header": "Transport",
+        "description": "W miastach dobrze rozwinięta jest komunikacja miejska, a taksówki warto zamawiać przez aplikacje, np. Uber, Bolt, lub korzystać z licencjonowanych przewoźników TAXI."
+      },
+      "8": {
+        "header": "Numery alarmowe",
+        "description": "Numer ogólny 112 działa na terenie całego kraju i obsługiwany jest także w języku angielskim."
+      },
+      "9": {
+        "header": "Bezpieczeństwo",
+        "description": "Polska jest krajem bezpiecznym, jednak warto zachować standardowe środki ostrożności, szczególnie w zatłoczonych miejscach."
+      }
+    }
+  },
+  "footer": {
+    "header":"Dane kontaktowe",
+    "tel": "Tel.",
+    "text": "Do zobaczenia wkrótce!"
+  }
+}
