@@ -4,7 +4,7 @@
 
 **[www.wedding.lukaszsliwinski.pl](https://www.wedding.lukaszsliwinski.pl)**
 
-![Website Preview](./screen.png)
+![Website Preview](./public/screen.png)
 
 ## About the Project
 
