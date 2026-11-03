@@ -1,10 +1,10 @@
 {
   "landing": {
     "date": "September 4, 2027",
-    "days": "days",
-    "hours": "hours",
-    "minutes": "minutes",
-    "seconds": "seconds"
+    "days": "{count, plural, one {day} other {days}}",
+    "hours": "{count, plural, one {hour} other {hours}}",
+    "minutes": "{count, plural, one {minute} other {minutes}}",
+    "seconds": "{count, plural, one {second} other {seconds}}"
   },
   "about": {
     "header": "About Us",
@@ -21,11 +21,11 @@
     "cards": {
       "1": {
         "header": "Wedding ceremony",
-        "description": "Friday, 4.09.2027\nat 3:00 PM\nWedding terrace of hotel\nZłoty Groń in Istebna"
+        "description": "Saturday, 4.09.2027\nat 3:00 PM\nWedding terrace of hotel\nZłoty Groń in Istebna"
       },
       "2": {
         "header": "Wedding party",
-        "description": "Friday, 4.09.2027\nat 3:45 PM\nWedding hall in hotel\nZłoty Groń in Istebna"
+        "description": "Saturday, 4.09.2027\nat 3:30 PM\nWedding hall in hotel\nZłoty Groń in Istebna"
       },
       "3": {
         "header": "Hotel"
@@ -130,8 +130,7 @@
     },
     "confirmation": {
       "header": "Confirmation of Attendance",
-      "description1": "We kindly ask you to complete the form below, which will allow us to understand the individual needs of our guests. The information collected will help us prepare the wedding in the best possible way, ensuring comfort for all attendees.",
-      "description2_1": "We also kindly ask you to confirm your attendance by ", 
+      "description2_1": "We kindly ask you to confirm your attendance by ", 
       "date": "May 31, 2027",
       "description2_2": ", contacting us by phone."
     }

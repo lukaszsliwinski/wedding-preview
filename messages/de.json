@@ -1,10 +1,10 @@
 {
   "landing": {
     "date": "4. September 2027",
-    "days": "tage",
-    "hours": "stunden",
-    "minutes": "minuten",
-    "seconds": "sekunden"
+    "days": "{count, plural, one {tag} other {tage}}",
+    "hours": "{count, plural, one {stunde} other {stunden}}",
+    "minutes": "{count, plural, one {minute} other {minuten}}",
+    "seconds": "{count, plural, one {sekunde} other {sekunden}}"
   },
   "about": {
     "header": "Über uns",
@@ -14,18 +14,18 @@
     "header": "Karolina & Valentino",
     "text1": "Wir freuen uns sehr, euch zu unserer Hochzeit einzuladen, die inmitten der malerischen Landschaft der Beskiden stattfinden wird",
     "text_wider": "",
-    "text2": "4 September 2027 um 15:00 Uhr\nHotel Złoty Groń in Istebna, Polen"
+    "text2": "4. September 2027 um 15:00 Uhr\nHotel Złoty Groń in Istebna, Polen"
   },
   "localization": {
     "header": "Wo und wann",
     "cards": {
       "1": {
         "header": "Zeremonie",
-        "description": "Freitag, 4.09.2027\num 15:00 Uhr\nTerrasse des Hotels\nZłoty Groń in Istebna"
+        "description": "Samstag, 4.09.2027\num 15:00 Uhr\nTerrasse des Hotels\nZłoty Groń in Istebna"
       },
       "2": {
         "header": "Hochzeit",
-        "description": "Freitag, 4.09.2027\num 15:45 Uhr\nHochzeitssaal des Hotels\nZłoty Groń in Istebna"
+        "description": "Samstag, 4.09.2027\num 15:30 Uhr\nHochzeitssaal des Hotels\nZłoty Groń in Istebna"
       },
       "3": {
         "header": "Hotel"
@@ -130,7 +130,6 @@
     },
     "confirmation": {
       "header": "Teilnahmebestätigung",
-      "description1": "Wir bitten euch, das folgende Formular auszufüllen. Es hilft uns, die individuellen Bedürfnisse unserer Gäste kennenzulernen und die Hochzeitsfeier bestmöglich zu organisieren, damit sich alle rundum wohlfühlen.",
       "description2_1": "Bitte bestätigt eure Teilnahme bis zum ",
       "date": "31. Mai 2027",
       "description2_2": ", telefonisch."

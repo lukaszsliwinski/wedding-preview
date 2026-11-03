@@ -165,7 +165,9 @@ export default function Landing() {
               <span className="inline-block min-w-13 md:mr-2 md:ml-3 text-center md:text-right text-xl xs:text-2xl sm:text-3xl">
                 {mounted ? value : '00'}
               </span>
-              <span className="text-sm sm:text-base mt-3 uppercase">{t(key)}</span>
+              <span className="text-sm sm:text-base mt-3 uppercase">
+                {t(key, { count: mounted ? value : 0 })}
+              </span>
             </motion.div>
           ))}
         </motion.div>
