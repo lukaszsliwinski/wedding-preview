@@ -36,11 +36,6 @@ export default function Footer() {
       </div>
       
       <FadeInDiv>
-        <div className="w-full md:max-w-2xl flex justify-center items-center px-4 mb-4">
-          <div className="picture-frame">
-            <Image src="/footer.webp" width="800" height="600" alt="footer photo" />
-          </div>
-        </div>
         <div className="flex flex-col items-center mb-32">
           <h3 className="text-header font-alice text-2xl md:text-4xl mb-2">{t('text')}</h3>
           <Icon src="/icons/smile.svg" className="w-10 h-10 text-theme1" alt="icon" />

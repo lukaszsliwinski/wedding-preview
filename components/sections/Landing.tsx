@@ -83,7 +83,7 @@ export default function Landing() {
     hFull: { height: '100%', marginBottom: '0' },
     hFit: {
       height: 'auto',
-      marginBottom: '30vh',
+      margin: 'auto',
       transition: {
         duration: 1.2,
         ease: cubic,
@@ -134,7 +134,7 @@ export default function Landing() {
     >
       <LanguageSwitcher />
       <motion.div
-        className="flex flex-col items-center justify-center w-full gap-y-2 sm:gap-y-4 text-white bg-white/10 backdrop-blur-lg font-alice"
+        className="flex flex-col items-center justify-center w-full gap-y-2 sm:gap-y-4 text-white bg-white/10 backdrop-blur shadow font-alice"
         animate={barBgControls}
         variants={barBgVariants}
         initial="hFull"
