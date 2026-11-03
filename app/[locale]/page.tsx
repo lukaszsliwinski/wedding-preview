@@ -1,5 +1,3 @@
-'use client';
-
 import Landing from '@/components/sections/Landing';
 import About from '@/components/sections/About';
 import Localization from '@/components/sections/Localization';
