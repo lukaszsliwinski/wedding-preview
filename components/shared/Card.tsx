@@ -14,7 +14,7 @@ export default function Card({ icon, title, higherHeader, children, className = 
     <div
       className={`flex items-center flex-col h-full bg-white shadow-2xl p-6 md:p-10 ${className}`}
     >
-      {icon && <Icon src={icon} className="w-18 h-18 mb-3 text-header" alt="header icon" />}
+      {icon && <Icon src={icon} className="w-18 h-18 mb-3 text-header" />}
       <div className={`${higherHeader ? 'md:h-20' : ''} flex items-center`}>
         <h4 className="text-header text-2xl lg:text-3xl text-center">
           {title}

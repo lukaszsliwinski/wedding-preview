@@ -11,7 +11,6 @@ export default function Invitation() {
           <Icon
             src="/icons/dots_left.svg"
             className="w-[280px] xs:w-[360px] sm:w-[400px] h-[400px] text-theme1 -rotate-45"
-            alt="icon"
           />
         </div>
         <span className="text-3xl xs:text-4xl lg:text-5xl font-alex-brush mb-8">

@@ -34,7 +34,7 @@ export default function Footer() {
       <FadeInDiv>
         <div className="flex flex-col items-center mb-32">
           <h3 className="text-header text-2xl md:text-4xl mb-2">{t('text')}</h3>
-          <Icon src="/icons/smile.svg" className="w-10 h-10 text-theme1" alt="icon" />
+          <Icon src="/icons/smile.svg" className="w-10 h-10 text-theme1" />
         </div>
       </FadeInDiv>
       <div className="absolute bottom-4 flex justify-center w-full select-none">

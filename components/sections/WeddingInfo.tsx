@@ -24,7 +24,7 @@ export default function WeddingInfo() {
           <React.Fragment key={idx}>
             {Number(idx) % 2 === 0 && (
               <div className="w-full hidden md:flex justify-center items-center">
-                <Icon src="/icons/dots_left.svg" className="w-64 h-64 text-theme1" alt="icon" />
+                <Icon src="/icons/dots_left.svg" className="w-64 h-64 text-theme1" />
               </div>
             )}
             <FadeInDiv className="md:col-span-2">
@@ -36,7 +36,6 @@ export default function WeddingInfo() {
                           <Icon
                             src="/icons/heart2.svg"
                             className="w-4 h-4 mt-0.5 text-theme1"
-                            alt="heart icon"
                           />
                           &nbsp;<span className="max-md:text-left max-md:ml-4">{item}</span>
                         </span>
@@ -46,24 +45,24 @@ export default function WeddingInfo() {
                 {Number(idx) === 2 && (
                   <div className="grid grid-cols-5 gap-x-3  gap-y-6 mt-6 text-theme2">
                     <div className="col-span-2 relative flex justify-center items-center">
-                      <Icon src="/icons/nogift.svg" className="w-8 h-8" alt="icon" />
+                      <Icon src="/icons/nogift.svg" className="w-8 h-8" />
                       <div className="absolute left-0 bottom-0 w-[125%] h-0.5 bg-theme2/50 origin-bottom-left -rotate-37"></div>
                     </div>
                     <div className="flex justify-center items-center">
-                      <Icon src="/icons/arrow.svg" className="w-4 h-4" alt="icon" />
+                      <Icon src="/icons/arrow.svg" className="w-4 h-4" />
                     </div>
                     <div className="col-span-2 flex justify-center items-center">
-                      <Icon src="/icons/money.svg" className="w-8 h-8" alt="icon" />
+                      <Icon src="/icons/money.svg" className="w-8 h-8" />
                     </div>
                     <div className="col-span-2 relative flex justify-center items-center">
-                      <Icon src="/icons/noflowers.svg" className="w-10 h-10" alt="icon" />
+                      <Icon src="/icons/noflowers.svg" className="w-10 h-10" />
                       <div className="absolute left-0 bottom-2 ml-1 w-[110%] h-0.5 bg-theme2/50 origin-bottom-left -rotate-37"></div>
                     </div>
                     <div className="flex justify-center items-center">
-                      <Icon src="/icons/arrow.svg" className="w-4 h-4" alt="icon" />
+                      <Icon src="/icons/arrow.svg" className="w-4 h-4" />
                     </div>
                     <div className="col-span-2 flex justify-center items-end">
-                      <Icon src="/icons/lotto.svg" className="w-8 h-8" alt="icon" />
+                      <Icon src="/icons/lotto.svg" className="w-8 h-8" />
                     </div>
                   </div>
                 )}
@@ -71,7 +70,7 @@ export default function WeddingInfo() {
             </FadeInDiv>
             {Number(idx) % 2 !== 0 && (
               <div className="w-full hidden md:flex justify-center items-center">
-                <Icon src="/icons/dots_right.svg" className="h-64 w-64 text-theme1" alt="icon" />
+                <Icon src="/icons/dots_right.svg" className="h-64 w-64 text-theme1" />
               </div>
             )}
           </React.Fragment>
@@ -109,7 +108,6 @@ export default function WeddingInfo() {
                       <Icon
                         src="/icons/sunrise.svg"
                         className="w-8 h-8 ml-auto text-orange-300"
-                        alt="sunrise"
                       />
                     </div>
                     <div className="col-span-3 max-sm:text-sm/6 pt-3.5">

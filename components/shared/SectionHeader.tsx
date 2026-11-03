@@ -22,7 +22,7 @@ export default function SectionHeader({ header, subheader }: SectionHeaderProps)
         mass: 1.5
       }}
     >
-      <Icon src="/icons/header.svg" className="w-20 h-8 sm:w-40 sm:h-12" alt="header icon" />
+      <Icon src="/icons/header.svg" className="w-20 h-8 sm:w-40 sm:h-12" />
       <h2 className="text-center text-2xl sm:text-5xl mt-1 md:mt-4">{header}</h2>
       {subheader && (
         <p className="flex flex-col max-w-4xl text-center m-4 md:mb-8 opacity-75 max-sm:text-sm/6">
