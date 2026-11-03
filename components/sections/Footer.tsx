@@ -21,7 +21,7 @@ export default function Footer() {
           <Card title="Karolina">
             <p className="flex flex-col text-center mt-4">
               <span className="mb-1">{t('tel')}</span>
-              <span className="text-nowrap mb-4 font-bold">{process.env.NEXT_PUBLIC_KARO_TEL}</span>
+              <span className="text-nowrap mb-4 font-bold">+49 0123456789</span>
             </p>
           </Card>
         </FadeInDiv>
@@ -29,7 +29,7 @@ export default function Footer() {
           <Card title="Valentino">
             <p className="flex flex-col text-center mt-4">
               <span className="mb-1">{t('tel')}</span>
-              <span className="text-nowrap mb-4 font-bold">{process.env.NEXT_PUBLIC_VALE_TEL}</span>
+              <span className="text-nowrap mb-4 font-bold">+49 0123456789</span>
             </p>
           </Card>
         </FadeInDiv>
