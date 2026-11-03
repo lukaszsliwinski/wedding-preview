@@ -3,13 +3,13 @@
 import { useEffect } from 'react';
 import { useRouter, usePathname } from 'next/navigation';
 import { routing, type Locale } from '@/i18n/routing';
-import Flag from 'react-world-flags';
+import Flag from '@/components/shared/Flag';
 import { motion, useAnimation } from 'framer-motion';
 
-const languageData: Record<Locale, { flag: string }> = {
-  en: { flag: 'GB' },
-  de: { flag: 'DE' },
-  pl: { flag: 'PL' }
+const languageNames: Record<Locale, string> = {
+  en: 'English',
+  de: 'Deutsch',
+  pl: 'Polski'
 };
 
 export default function LanguageSwitcher() {
@@ -96,17 +96,15 @@ export default function LanguageSwitcher() {
             key={locale}
             variants={flagVariants}
             onClick={() => changeLocale(locale)}
+            aria-label={languageNames[locale]}
+            aria-current={locale === currentLocale ? 'true' : undefined}
             className={`
               w-7 h-7 rounded-full overflow-hidden flex items-center justify-center
               transition border border-theme2
               ${locale === currentLocale ? 'ring-2 ring-theme1 scale-105' : 'hover:scale-110 hover:cursor-pointer'}
             `}
           >
-            <Flag
-              code={languageData[locale].flag}
-              alt="language flag"
-              className="object-cover w-full h-full"
-            />
+            <Flag locale={locale} />
           </motion.button>
         ))}
       </motion.div>
