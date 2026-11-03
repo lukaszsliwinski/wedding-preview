@@ -1,8 +1,7 @@
 'use client';
 
-import { motion } from 'framer-motion';
+import { motion } from 'motion/react';
 import Icon from '@/components/shared/Icon';
-import useInView from '@/hooks/useInView';
 
 interface SectionHeaderProps {
   header: string;
@@ -10,13 +9,12 @@ interface SectionHeaderProps {
 }
 
 export default function SectionHeader({ header, subheader }: SectionHeaderProps) {
-  const { ref, isInView } = useInView();
   return (
     <motion.div
-      ref={ref}
       className="flex w-screen justify-center items-center flex-col bg-theme2 text-theme1 py-8 px-3 md:py-12 origin-center"
       initial={{ scaleX: 0 }}
-      animate={isInView ? { scaleX: 1 } : {}}
+      whileInView={{ scaleX: 1 }}
+      viewport={{ once: true, margin: '0px 0px -20% 0px' }}
       transition={{
         type: 'spring',
         stiffness: 80,

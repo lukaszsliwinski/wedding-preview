@@ -1,7 +1,7 @@
 'use client';
 
-import { motion } from 'framer-motion';
-import useInView from '@/hooks/useInView';
+import { motion } from 'motion/react';
+import { cubic } from '@/lib/motion';
 
 export default function FadeInDiv({
   children,
@@ -10,17 +10,15 @@ export default function FadeInDiv({
   children: React.ReactNode;
   className?: string;
 }) {
-  const { ref, isInView } = useInView();
-
   return (
     <motion.div
       className={className}
-      ref={ref}
       initial={{ opacity: 0, y: 30 }}
-      animate={isInView ? { opacity: 1, y: 0 } : {}}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true, margin: '0px 0px -20% 0px' }}
       transition={{
         duration: 0.6,
-        ease: [0.25, 0.1, 0.25, 1],
+        ease: cubic,
         delay: 0.2
       }}
     >

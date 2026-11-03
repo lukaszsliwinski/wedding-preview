@@ -5,7 +5,7 @@ export default function Invitation() {
   const t = useTranslations('invitation');
 
   return (
-    <div className="w-full h-full sm:w-[800px] max-h-[600px] shadow-2xl mx-auto px-2 bg-[#f5f5f5]">
+    <div className="w-full h-full sm:w-[800px] max-h-[600px] shadow-2xl mx-auto px-2 bg-background">
       <div className="flex flex-col items-center">
         <div className="h-42 overflow-hidden rotate-180">
           <Icon

@@ -1,6 +1,4 @@
 import { useTranslations } from 'next-intl';
-import moment from 'moment';
-import Image from 'next/image';
 
 import SectionHeader from '@/components/shared/SectionHeader';
 import FadeInDiv from '@/components/shared/FadeInDiv';
@@ -9,8 +7,6 @@ import Icon from '@/components/shared/Icon';
 
 export default function Footer() {
   const t = useTranslations('footer');
-
-  const years = moment().year().toString() === '2025' ? '2025' : `2025-${moment().year()}`
 
   return (
     <footer className="relative flex flex-col w-screen items-center" id="contact">
@@ -37,12 +33,12 @@ export default function Footer() {
       
       <FadeInDiv>
         <div className="flex flex-col items-center mb-32">
-          <h3 className="text-header font-alice text-2xl md:text-4xl mb-2">{t('text')}</h3>
+          <h3 className="text-header text-2xl md:text-4xl mb-2">{t('text')}</h3>
           <Icon src="/icons/smile.svg" className="w-10 h-10 text-theme1" alt="icon" />
         </div>
       </FadeInDiv>
       <div className="absolute bottom-4 flex justify-center w-full select-none">
-        <p className="text-xs">&copy; {years} ŁUKASZ ŚLIWIŃSKI</p>
+        <p className="text-xs">&copy; 2025-{new Date().getFullYear()} ŁUKASZ ŚLIWIŃSKI</p>
       </div>
     </footer>
   );

@@ -1,4 +1,4 @@
-import React, { ReactNode } from 'react';
+import { ReactNode } from 'react';
 import Icon from '@/components/shared/Icon';
 
 interface CardProps {
@@ -9,7 +9,7 @@ interface CardProps {
   className?: string;
 }
 
-export default function Card({ icon, title, higherHeader, children, className }: CardProps) {
+export default function Card({ icon, title, higherHeader, children, className = '' }: CardProps) {
   return (
     <div
       className={`flex items-center flex-col h-full bg-white shadow-2xl p-6 md:p-10 ${className}`}

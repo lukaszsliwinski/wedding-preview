@@ -1,8 +1,8 @@
 import { useTranslations } from 'next-intl';
-import Link from 'next/link';
 
 import enJson from '@/messages/en.json';
 
+import ButtonLink from '@/components/ButtonLink';
 import SectionHeader from '@/components/shared/SectionHeader';
 import FadeInDiv from '@/components/shared/FadeInDiv';
 import Card from '@/components/shared/Card';
@@ -20,10 +20,7 @@ export default function Localization() {
           <FadeInDiv key={idx}>
             <Card title={t(`cards.${idx}.header`)}>
               <p className="flex flex-col my-4 md:px-4 whitespace-pre-wrap text-center">
-                {idx === '1' && (
-                  <span className="max-sm:text-sm/6">{t(`cards.${idx}.description`)}</span>
-                )}
-                {idx === '2' && (
+                {(idx === '1' || idx === '2') && (
                   <span className="max-sm:text-sm/6">{t(`cards.${idx}.description`)}</span>
                 )}
                 {idx === '3' && (
@@ -38,13 +35,10 @@ export default function Localization() {
                       loading="lazy"
                       referrerPolicy="no-referrer-when-downgrade"
                     ></iframe>
-                    <Link
+                    <ButtonLink
+                      label="www.hotelzlotygron.pl"
                       href="https://www.hotelzlotygron.pl/"
-                      target="_blank"
-                      className="mx-auto my-4 rounded-lg border border-black shadow-lg max-sm:text-sm hover:text-theme2 hover:border-theme2 shadow-black/20 hover:shadow-black/10 px-6 py-2 font-bold transition duration-100"
-                    >
-                      www.hotelzlotygron.pl
-                    </Link>
+                    />
                   </>
                 )}
                 {idx === '4' && (

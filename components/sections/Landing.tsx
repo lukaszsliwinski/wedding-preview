@@ -3,7 +3,8 @@
 import { useEffect, useState } from 'react';
 import { useTranslations } from 'next-intl';
 import LanguageSwitcher from '@/components/LanguageSwitcher';
-import { motion, useAnimation } from 'framer-motion';
+import { motion, useAnimation } from 'motion/react';
+import { cubic } from '@/lib/motion';
 
 interface TimeLeft {
   days: number;
@@ -56,8 +57,6 @@ export default function Landing() {
   const timerControls = useAnimation();
 
   // motion variants
-  const cubic = [0.25, 0.1, 0.25, 1] as [number, number, number, number];
-
   const barTextVariants = {
     hidden: { opacity: 0, scale: 0 },
     visible: {
@@ -109,7 +108,6 @@ export default function Landing() {
     hidden: { opacity: 0 },
     visible: {
       opacity: 1,
-      y: 0,
       transition: {
         duration: 0.35,
         ease: cubic

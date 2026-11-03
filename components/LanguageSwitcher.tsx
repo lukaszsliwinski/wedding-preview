@@ -1,10 +1,11 @@
 'use client';
 
-import { useEffect } from 'react';
-import { useRouter, usePathname } from 'next/navigation';
+import { useLocale } from 'next-intl';
+import { usePathname, useRouter } from '@/i18n/navigation';
 import { routing, type Locale } from '@/i18n/routing';
 import Flag from '@/components/shared/Flag';
-import { motion, useAnimation } from 'framer-motion';
+import { motion, type Variants } from 'motion/react';
+import { cubic } from '@/lib/motion';
 
 const languageNames: Record<Locale, string> = {
   en: 'English',
@@ -12,85 +13,47 @@ const languageNames: Record<Locale, string> = {
   pl: 'Polski'
 };
 
+const boxVariants: Variants = {
+  hidden: { opacity: 0 },
+  visible: {
+    opacity: 1,
+    transition: {
+      duration: 0.3,
+      ease: cubic,
+      delay: 3,
+      when: 'beforeChildren',
+      staggerChildren: 0.2,
+      delayChildren: 0.05
+    }
+  }
+};
+
+const flagVariants: Variants = {
+  hidden: { opacity: 0 },
+  visible: {
+    opacity: 1,
+    transition: {
+      duration: 0.35,
+      ease: cubic
+    }
+  }
+};
+
 export default function LanguageSwitcher() {
   const router = useRouter();
   const pathname = usePathname();
+  const currentLocale = useLocale();
 
-  const currentLocale = (pathname.split('/')[1] as Locale) || routing.defaultLocale;
-
-  const changeLocale = (locale: Locale) => {
-    const parts = pathname.split('/');
-    parts[1] = routing.locales.includes(parts[1] as Locale) ? locale : `${locale}/${parts[1]}`;
-    router.push(parts.join('/'));
-  };
-
-  // ANIMATIONS //
-
-  // animation controls
-  const boxControls = useAnimation();
-  const wrapperControls = useAnimation();
-
-  // motion variants
-  const cubic = [0.25, 0.1, 0.25, 1] as [number, number, number, number];
-
-  const boxVariants = {
-    hidden: { opacity: 0 },
-    visible: {
-      opacity: 1,
-      transition: {
-        duration: 0.3,
-        ease: cubic,
-        delay: 3
-      }
-    }
-  };
-
-  const wrapperVariants = {
-    hidden: { opacity: 0 },
-    visible: {
-      opacity: 1,
-      transition: {
-        duration: 0.3,
-        ease: cubic,
-        staggerChildren: 0.2,
-        delayChildren: 0.05
-      }
-    }
-  };
-
-  const flagVariants = {
-    hidden: { opacity: 0 },
-    visible: {
-      opacity: 1,
-      y: 0,
-      transition: {
-        duration: 0.35,
-        ease: cubic
-      }
-    }
-  };
-
-  // animation queue
-  useEffect(() => {
-    (async () => {
-      await boxControls.start('visible');
-      await wrapperControls.start('visible');
-    })();
-  }, []);
+  const changeLocale = (locale: Locale) => router.push(pathname, { locale });
 
   return (
     <motion.div
       className="fixed top-2 right-2 md:right-6 z-50 shadow-xl border border-theme2 bg-theme2/90 p-2 rounded-lg"
-      animate={boxControls}
+      animate="visible"
       variants={boxVariants}
       initial="hidden"
     >
-      <motion.div
-        className="flex gap-3"
-        animate={wrapperControls}
-        variants={wrapperVariants}
-        initial="hidden"
-      >
+      <div className="flex gap-3">
         {routing.locales.map((locale) => (
           <motion.button
             key={locale}
@@ -107,7 +70,7 @@ export default function LanguageSwitcher() {
             <Flag locale={locale} />
           </motion.button>
         ))}
-      </motion.div>
+      </div>
     </motion.div>
   );
 }

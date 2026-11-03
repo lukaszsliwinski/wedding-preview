@@ -1,12 +1,8 @@
 'use client';
 
 import React from 'react';
-import { useTranslations } from 'next-intl';
+import { useLocale, useTranslations } from 'next-intl';
 import enJson from '@/messages/en.json';
-import deJson from '@/messages/de.json';
-import plJson from '@/messages/pl.json';
-import { usePathname } from 'next/navigation';
-import { routing, type Locale } from '@/i18n/routing';
 
 import Image from 'next/image';
 import SectionHeader from '@/components/shared/SectionHeader';
@@ -16,20 +12,17 @@ import Card from '@/components/shared/Card';
 
 export default function WeddingInfo() {
   const t = useTranslations('weddinginfo');
+  const currentLocale = useLocale();
   const items = enJson.weddinginfo.agenda.items;
-  
-  // get current language version
-  const pathname = usePathname();
-  const currentLocale = (pathname.split('/')[1] as Locale) || routing.defaultLocale;
-
-  const cards = ({ en: enJson, de: deJson, pl: plJson }[currentLocale] || enJson).weddinginfo.cards;
+  const cards = enJson.weddinginfo.cards;
+  const attractions: Record<string, string> = t.raw('cards.4.description');
 
   return (
     <section className="flex flex-col w-screen items-center" id="weddinginfo">
       <SectionHeader header={t('header')} />
 
       <div className="grid md:grid-cols-3 gap-4 xs:gap-6 md:gap-16 w-full max-w-7xl px-3 xs:px-6 mt-6 md:mt-16">
-        {Object.entries(cards).map(([idx, card]) => (
+        {Object.keys(cards).map((idx) => (
           <React.Fragment key={idx}>
             {Number(idx) % 2 === 0 && (
               <div className="w-full hidden md:flex justify-center items-center">
@@ -40,7 +33,7 @@ export default function WeddingInfo() {
               <Card icon={`/icons/${t(`cards.${idx}.icon`)}.svg`} title={t(`cards.${idx}.header`)}>
                 <p className="flex flex-col text-center max-sm:text-sm/6 mt-4 whitespace-pre-wrap">
                   {Number(idx) === 4
-                    ? Object.entries(cards[4].description).map(([idx, item]) => (
+                    ? Object.entries(attractions).map(([idx, item]) => (
                         <span className="inline-flex md:justify-center items-center mb-3" key={idx}>
                           <Icon
                             src="/icons/heart2.svg"
@@ -53,7 +46,7 @@ export default function WeddingInfo() {
                     : t(`cards.${idx}.description`)}
                 </p>
                 {Number(idx) === 2 && (
-                  <div className="grid grid-cols-5 gap-x-3  gap-y-6 mt-6 text-theme2" key={idx}>
+                  <div className="grid grid-cols-5 gap-x-3  gap-y-6 mt-6 text-theme2">
                     <div className="col-span-2 relative flex justify-center items-center">
                       <Icon src="/icons/nogift.svg" className="w-8 h-8" alt="icon" />
                       <div className="absolute left-0 bottom-0 w-[125%] h-0.5 bg-theme2/50 origin-bottom-left -rotate-37"></div>
@@ -88,9 +81,15 @@ export default function WeddingInfo() {
       </div>
 
       <div className="grid lg:grid-cols-2 w-full max-w-6xl gap-4 xs:gap-6 lg:gap-12 px-3 xs:px-6 mt-10 lg:mt-16">
-        <FadeInDiv className="w-full flex lg:hidden justify-center items-center">
+        <FadeInDiv className="w-full flex justify-center items-center lg:order-last">
           <div className="picture-frame">
-            <Image src="/agenda.webp" width="400" height="550" alt="agenda photo" />
+            <Image
+              src="/agenda.webp"
+              className="w-[400px] lg:w-[450px]"
+              width="450"
+              height="600"
+              alt="agenda photo"
+            />
           </div>
         </FadeInDiv>
         <FadeInDiv>
@@ -123,11 +122,6 @@ export default function WeddingInfo() {
               )}
             </div>
           </Card>
-        </FadeInDiv>
-        <FadeInDiv className="w-full hidden lg:flex justify-center items-center">
-          <div className="picture-frame">
-            <Image src="/agenda.webp" width="450" height="600" alt="agenda photo" />
-          </div>
         </FadeInDiv>
       </div>
       <FadeInDiv className="flex w-screen justify-center items-center flex-col px-3 xs:px-6 my-6 md:my-16">
