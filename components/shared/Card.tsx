@@ -16,9 +16,9 @@ export default function Card({ icon, title, higherHeader, children, className = 
     >
       {icon && <Icon src={icon} className="w-18 h-18 mb-3 text-header" />}
       <div className={`${higherHeader ? 'md:h-20' : ''} flex items-center`}>
-        <h4 className="text-header text-2xl lg:text-3xl text-center">
+        <h3 className="text-header text-2xl lg:text-3xl text-center">
           {title}
-        </h4>
+        </h3>
       </div>
       <div className="bg-theme1 h-0.5 w-10 sm:w-12 mt-1 sm:mt-2"></div>
       {children}

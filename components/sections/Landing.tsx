@@ -148,7 +148,7 @@ export default function Landing() {
             <span className="text-xl md:text-4xl">&</span>
             <br className="md:hidden" /> Valentino
           </h1>
-          <h2 className="text-lg sm:text-2xl">{t('date')}</h2>
+          <p className="text-lg sm:text-2xl">{t('date')}</p>
         </motion.div>
         <motion.div
           className="max-md:grid max-md:grid-cols-4 max-md:gap-4 md:flex md:max-w-3xl lg:max-w-5xl mb-2 sm:mb-3 mx-auto"
