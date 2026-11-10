@@ -1,27 +1,30 @@
 services:
-  weddingpreview:
+  wedding_website:
     build: .
-    container_name: weddingpreview
+    container_name: wedding_website
     restart: always
     env_file:
       - .env
     environment:
-      - NODE_ENV=${NODE_ENV}
-      - PORT=${PORT}
+      NODE_ENV: production
+      PORT: ${PORT:-3000}
+      HOSTNAME: 0.0.0.0
+      NEXT_TELEMETRY_DISABLED: "1"
+    # Traefik: domain routing, TLS certificate and HSTS header.
     labels:
       - "traefik.enable=true"
-      - "traefik.http.routers.weddingpreview.rule=Host(`${DOMAIN}`) || Host(`www.${DOMAIN}`)"
-      - "traefik.http.routers.weddingpreview.entrypoints=websecure"
-      - "traefik.http.routers.weddingpreview.tls.certresolver=le"
-      - "traefik.http.services.weddingpreview.loadbalancer.server.port=${PORT}"
-      - "traefik.http.middlewares.weddingpreview-hsts.headers.stsSeconds=31536000"
-      - "traefik.http.middlewares.weddingpreview-hsts.headers.stsIncludeSubdomains=true"
-      - "traefik.http.middlewares.weddingpreview-hsts.headers.stsPreload=true"
-      - "traefik.http.routers.weddingpreview.middlewares=weddingpreview-hsts@docker"
+      - "traefik.http.routers.wedding_website.rule=Host(`${DOMAIN}`) || Host(`www.${DOMAIN}`)"
+      - "traefik.http.routers.wedding_website.entrypoints=websecure"
+      - "traefik.http.routers.wedding_website.tls.certresolver=le"
+      - "traefik.http.services.wedding_website.loadbalancer.server.port=${PORT:-3000}"
+      - "traefik.http.middlewares.wedding_website-hsts.headers.stsSeconds=31536000"
+      - "traefik.http.middlewares.wedding_website-hsts.headers.stsIncludeSubdomains=true"
+      - "traefik.http.middlewares.wedding_website-hsts.headers.stsPreload=true"
+      - "traefik.http.routers.wedding_website.middlewares=wedding_website-hsts@docker"
     networks:
       - web
     expose:
-      - "${PORT}"
+      - "${PORT:-3000}"
 
 networks:
   web:
