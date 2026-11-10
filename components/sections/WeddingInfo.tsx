@@ -92,30 +92,20 @@ export default function WeddingInfo() {
         <FadeInDiv>
           <Card title={t('agenda.header')} className="max-w-xl mx-auto">
             <div className="grid grid-cols-4 mt-4 leading-5.5 max-xs:-mx-4">
-              {Object.keys(items).map((idx) =>
-                Number(idx) < 20 ? (
-                  <React.Fragment key={idx}>
-                    <div className={`font-bold text-right ${currentLocale === 'en' ? 'text-nowrap max-sm:pr-3 text-xs/5.5 xs:text-[15px]/5.5' : ''} pr-5 my-1`}>
-                      {t(`agenda.items.${idx}.hour`)}
-                    </div>
-                    <div className="col-span-3 my-1 max-sm:text-sm/5.5">
-                      {t(`agenda.items.${idx}.description`)}
-                    </div>
-                  </React.Fragment>
-                ) : (
-                  <React.Fragment key={idx}>
-                    <div className={`font-bold ${currentLocale === 'en' ? 'xs:pr-8 sm:pr-11' : ''} pr-7 pt-1.5`}>
-                      <Icon
-                        src="/icons/sunrise.svg"
-                        className="w-8 h-8 ml-auto text-orange-300"
-                      />
-                    </div>
-                    <div className="col-span-3 max-sm:text-sm/6 pt-3.5">
-                      {t(`agenda.items.${idx}.description`)}
-                    </div>
-                  </React.Fragment>
-                )
-              )}
+              {Object.keys(items).map((idx) => (
+                <React.Fragment key={idx}>
+                  <div className={`font-bold text-right ${currentLocale === 'en' ? 'text-nowrap max-sm:pr-3 text-xs/5.5 xs:text-[15px]/5.5' : ''} pr-5 my-1`}>
+                    {t(`agenda.items.${idx}.hour`)}
+                  </div>
+                  <div className="col-span-3 my-1 max-sm:text-sm/5.5">
+                    {t(`agenda.items.${idx}.description`)}
+                  </div>
+                </React.Fragment>
+              ))}
+              <div className={`font-bold ${currentLocale === 'en' ? 'xs:pr-8 sm:pr-11' : ''} pr-7 pt-1.5`}>
+                <Icon src="/icons/sunrise.svg" className="w-8 h-8 ml-auto text-orange-300" />
+              </div>
+              <div className="col-span-3 max-sm:text-sm/6 pt-3.5">{t('agenda.return')}</div>
             </div>
           </Card>
         </FadeInDiv>

@@ -122,11 +122,9 @@
         "10": {
           "hour": "00:00",
           "description": "Oczepiny"
-        },
-        "21": {
-          "description": "Transport do Rybnika i Katowic"
         }
-      }
+      },
+      "return": "Transport do Rybnika i Katowic"
     },
     "confirmation": {
       "header": "Potwierdzenie obecności",

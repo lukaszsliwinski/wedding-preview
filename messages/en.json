@@ -122,11 +122,9 @@
         "10": {
           "hour": "12:00 AM",
           "description": "Oczepiny (traditional Polish wedding cap ceremony)"
-        },
-        "21": {
-          "description": "Transportation to Rybnik and Katowice"
         }
-      }
+      },
+      "return": "Transportation to Rybnik and Katowice"
     },
     "confirmation": {
       "header": "Confirmation of Attendance",

@@ -122,11 +122,9 @@
         "10": {
           "hour": "00:00",
           "description": "Oczepiny (traditioneller Mitternachtsbrauch)"
-        },
-        "21": {
-          "description": "Transport nach Rybnik und Kattowitz nach Veranstaltungsende"
         }
-      }
+      },
+      "return": "Transport nach Rybnik und Kattowitz nach Veranstaltungsende"
     },
     "confirmation": {
       "header": "Teilnahmebestätigung",
