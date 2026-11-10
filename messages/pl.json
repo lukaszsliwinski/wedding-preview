@@ -51,23 +51,19 @@
   "weddinginfo": {
     "header": "Dodatkowe informacje weselne",
     "cards": {
-      "1": {
-        "icon": "dresscode",
+      "dresscode": {
         "header": "Dress code",
         "description": "Zachęcamy do wyboru stroju dopasowanego do własnego stylu i gustu, tak aby jednocześnie pasował do charakteru uroczystości i zapewniał pełną wygodę przez cały czas trwania wydarzenia."
       },
-      "2": {
-        "icon": "presents",
+      "presents": {
         "header": "Prezenty",
         "description": "Ze względu na wysiłek związany z daleką podróżą na nasz ślub i wesele, nie oczekujemy prezentów. Najcenniejszym podarunkiem będzie dla nas Wasza obecność, serdeczne życzenia i wspólna zabawa. Jeśli jednak mimo to zechcecie obdarować nas upominkiem, poniżej zamieszczamy wskazówki:"
       },
-      "3": {
-        "icon": "transport",
+      "transport": {
         "header": "Transport",
         "description": "Dla wygody Gości, którzy nie zatrzymują się w Istebnej, zapewniamy transport do Rybnika i Katowic po zakończeniu przyjęcia weselnego."
       },
-      "4": {
-        "icon": "attractions",
+      "attractions": {
         "header": "Atrakcje",
         "description": {
           "1": "Bezpieczna przestrzeń do zabawy dla dzieci",

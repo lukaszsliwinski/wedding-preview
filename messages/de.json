@@ -51,23 +51,19 @@
   "weddinginfo": {
     "header": "Zusätzliche Hochzeitsinformationen",
     "cards": {
-      "1": {
-        "icon": "dresscode",
+      "dresscode": {
         "header": "Dress code",
         "description": "Wir ermutigen euch, ein Outfit zu wählen, das eurem eigenen Stil und Geschmack entspricht, zugleich aber zum Charakter der Feier passt und während der gesamten Veranstaltung vollen Tragekomfort bietet."
       },
-      "2": {
-        "icon": "presents",
+      "presents": {
         "header": "Geschenke",
         "description": "Aufgrund des Aufwands, der mit der weiten Anreise zur Hochzeit und Feier verbunden ist, erwarten wir keine Geschenke. Das schönste Geschenk für uns ist eure Anwesenheit, eure guten Wünsche und das gemeinsame Feiern.\n\nSolltet ihr dennoch ein Geschenk überreichen wollen, hier ein kleiner Hinweis:"
       },
-      "3": {
-        "icon": "transport",
+      "transport": {
         "header": "Transport",
         "description": "Für den Komfort der Gäste, die nicht in Istebna übernachten, stellen wir nach dem Ende der Hochzeitsfeier einen Transport nach Rybnik und Kattowitz zur Verfügung."
       },
-      "4": {
-        "icon": "attractions",
+      "attractions": {
         "header": "Attraktionen",
         "description": {
           "1": "Eine sichere Spielfläche für Kinder",

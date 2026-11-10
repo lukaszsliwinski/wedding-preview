@@ -8,29 +8,35 @@ import FadeInDiv from '@/components/shared/FadeInDiv';
 import Icon from '@/components/shared/Icon';
 import Card from '@/components/shared/Card';
 
+const cards = [
+  { key: 'dresscode', icon: '/icons/dresscode.svg' },
+  { key: 'presents', icon: '/icons/presents.svg' },
+  { key: 'transport', icon: '/icons/transport.svg' },
+  { key: 'attractions', icon: '/icons/attractions.svg' }
+] as const;
+
 export default function WeddingInfo() {
   const t = useTranslations('weddinginfo');
   const currentLocale = useLocale();
   const items = enJson.weddinginfo.agenda.items;
-  const cards = enJson.weddinginfo.cards;
-  const attractions: Record<string, string> = t.raw('cards.4.description');
+  const attractions: Record<string, string> = t.raw('cards.attractions.description');
 
   return (
     <section className="flex flex-col w-screen items-center" id="weddinginfo">
       <SectionHeader header={t('header')} />
 
       <div className="grid md:grid-cols-3 gap-4 xs:gap-6 md:gap-16 w-full max-w-7xl px-3 xs:px-6 mt-6 md:mt-16">
-        {Object.keys(cards).map((idx) => (
-          <React.Fragment key={idx}>
-            {Number(idx) % 2 === 0 && (
+        {cards.map(({ key, icon }, index) => (
+          <React.Fragment key={key}>
+            {index % 2 === 1 && (
               <div className="w-full hidden md:flex justify-center items-center">
                 <Icon src="/icons/dots_left.svg" className="w-64 h-64 text-theme1" />
               </div>
             )}
             <FadeInDiv className="md:col-span-2">
-              <Card icon={`/icons/${t(`cards.${idx}.icon`)}.svg`} title={t(`cards.${idx}.header`)}>
+              <Card icon={icon} title={t(`cards.${key}.header`)}>
                 <p className="flex flex-col text-center max-sm:text-sm/6 mt-4 whitespace-pre-wrap">
-                  {Number(idx) === 4
+                  {key === 'attractions'
                     ? Object.entries(attractions).map(([idx, item]) => (
                         <span className="inline-flex md:justify-center items-center mb-3" key={idx}>
                           <Icon
@@ -40,9 +46,9 @@ export default function WeddingInfo() {
                           &nbsp;<span className="max-md:text-left max-md:ml-4">{item}</span>
                         </span>
                       ))
-                    : t(`cards.${idx}.description`)}
+                    : t(`cards.${key}.description`)}
                 </p>
-                {Number(idx) === 2 && (
+                {key === 'presents' && (
                   <div className="grid grid-cols-5 gap-x-3  gap-y-6 mt-6 text-theme2">
                     <div className="col-span-2 relative flex justify-center items-center">
                       <Icon src="/icons/nogift.svg" className="w-8 h-8" />
@@ -68,7 +74,7 @@ export default function WeddingInfo() {
                 )}
               </Card>
             </FadeInDiv>
-            {Number(idx) % 2 !== 0 && (
+            {index % 2 === 0 && (
               <div className="w-full hidden md:flex justify-center items-center">
                 <Icon src="/icons/dots_right.svg" className="h-64 w-64 text-theme1" />
               </div>

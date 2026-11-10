@@ -51,23 +51,19 @@
   "weddinginfo": {
     "header": "Additional Wedding Information",
     "cards": {
-      "1": {
-        "icon": "dresscode",
+      "dresscode": {
         "header": "Dress Code",
         "description": "We encourage you to choose an outfit that reflects your own style and taste, while also being appropriate for the occasion and ensuring comfort throughout the entire event."
       },
-      "2": {
-        "icon": "presents",
+      "presents": {
         "header": "Presents",
         "description": "Due to the effort involved in traveling a long distance to attend our wedding, we do not expect gifts. The greatest gift for us will be your presence, heartfelt wishes, and celebrating together. If you do wish to give a gift, here is a small suggestion:"
       },
-      "3": {
-        "icon": "transport",
+      "transport": {
         "header": "Transport",
         "description": "For the convenience of guests who are not staying in Istebna, transportation to Rybnik and Katowice will be provided after the wedding party."
       },
-      "4": {
-        "icon": "attractions",
+      "attractions": {
         "header": "Attractions",
         "description": {
           "1": "A safe play area for children",
