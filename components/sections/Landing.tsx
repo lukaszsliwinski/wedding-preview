@@ -1,53 +1,51 @@
 'use client';
 
-import { useEffect, useState } from 'react';
+import { useEffect } from 'react';
 import { useTranslations } from 'next-intl';
 import LanguageSwitcher from '@/components/LanguageSwitcher';
 import { motion, useAnimation } from 'motion/react';
 import { cubic } from '@/lib/motion';
+import useCountdown from '@/hooks/useCountdown';
 
-interface TimeLeft {
-  days: number;
-  hours: number;
-  minutes: number;
-  seconds: number;
+const weddingDate = new Date('2027-09-04T15:00:00');
+const units = ['days', 'hours', 'minutes', 'seconds'] as const;
+
+const timerItemVariants = {
+  hidden: { opacity: 0 },
+  visible: {
+    opacity: 1,
+    transition: {
+      duration: 0.35,
+      ease: cubic
+    }
+  }
+};
+
+// Only this component re-renders every second, not the whole Landing section
+function Countdown() {
+  const t = useTranslations('landing');
+  const timeLeft = useCountdown(weddingDate);
+
+  return units.map((unit) => {
+    const value = timeLeft?.[unit];
+
+    return (
+      <motion.div
+        key={unit}
+        variants={timerItemVariants}
+        className="max-md:flex max-md:flex-col max-md:items-center mb-2"
+      >
+        <span className="inline-block min-w-13 md:mr-2 md:ml-3 text-center md:text-right text-xl xs:text-2xl sm:text-3xl">
+          {value ?? '00'}
+        </span>
+        <span className="text-sm sm:text-base mt-3 uppercase">{t(unit, { count: value ?? 0 })}</span>
+      </motion.div>
+    );
+  });
 }
 
 export default function Landing() {
-  const [mounted, setMounted] = useState(false);
-
-  useEffect(() => {
-    setMounted(true);
-  }, []);
-
   const t = useTranslations('landing');
-
-  const targetDate = new Date('2027-09-04T15:00:00');
-  const [timeLeft, setTimeLeft] = useState<TimeLeft>(calculateTimeLeft());
-
-  function calculateTimeLeft(): TimeLeft {
-    const now = new Date().getTime();
-    const difference = targetDate.getTime() - now;
-
-    if (difference <= 0) {
-      return { days: 0, hours: 0, minutes: 0, seconds: 0 };
-    }
-
-    return {
-      days: Math.floor(difference / (1000 * 60 * 60 * 24)),
-      hours: Math.floor((difference / (1000 * 60 * 60)) % 24),
-      minutes: Math.floor((difference / (1000 * 60)) % 60),
-      seconds: Math.floor((difference / 1000) % 60)
-    };
-  }
-
-  useEffect(() => {
-    const timer = setInterval(() => {
-      setTimeLeft(calculateTimeLeft());
-    }, 1000);
-
-    return () => clearInterval(timer);
-  }, []);
 
   // ANIMATIONS //
 
@@ -104,17 +102,6 @@ export default function Landing() {
     }
   };
 
-  const timerItemVariants = {
-    hidden: { opacity: 0 },
-    visible: {
-      opacity: 1,
-      transition: {
-        duration: 0.35,
-        ease: cubic
-      }
-    }
-  };
-
   // animation queue
   useEffect(() => {
     (async () => {
@@ -123,7 +110,7 @@ export default function Landing() {
       await barBgControls.start('hFit');
       await timerControls.start('visible');
     })();
-  }, []);
+  }, [barTextControls, barBgControls, timerControls]);
 
   return (
     <section
@@ -156,20 +143,7 @@ export default function Landing() {
           animate={timerControls}
           variants={timerVariants}
         >
-          {Object.entries(timeLeft).map(([key, value]) => (
-            <motion.div
-              key={key}
-              variants={timerItemVariants}
-              className="max-md:flex max-md:flex-col max-md:items-center mb-2"
-            >
-              <span className="inline-block min-w-13 md:mr-2 md:ml-3 text-center md:text-right text-xl xs:text-2xl sm:text-3xl">
-                {mounted ? value : '00'}
-              </span>
-              <span className="text-sm sm:text-base mt-3 uppercase">
-                {t(key, { count: mounted ? value : 0 })}
-              </span>
-            </motion.div>
-          ))}
+          <Countdown />
         </motion.div>
       </motion.div>
     </section>

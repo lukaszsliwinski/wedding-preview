@@ -27,7 +27,7 @@ export default function Location() {
   const t = useTranslations('location');
 
   return (
-    <section className="w-screen min-h-screen flex flex-col items-center" id="Location">
+    <section className="w-screen min-h-screen flex flex-col items-center" id="location">
       <SectionHeader header={t('header')} />
 
       <div className="grid md:grid-cols-2 gap-4 xs:gap-6 w-full max-w-6xl px-3 xs:px-6 my-6 md:my-16">
