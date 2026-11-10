@@ -23,31 +23,27 @@
       "button": "Karte anzeigen"
     },
     "cards": {
-      "1": {
+      "ceremony": {
         "header": "Zeremonie",
         "description": "Samstag, 4.09.2027\num 15:00 Uhr\nTerrasse des Hotels\nin Istebna"
       },
-      "2": {
+      "party": {
         "header": "Hochzeit",
         "description": "Samstag, 4.09.2027\num 15:30 Uhr\nHochzeitssaal des Hotels\nin Istebna"
       },
-      "3": {
+      "hotel": {
         "header": "Hotel"
       },
-      "4": {
+      "accommodation": {
         "header": "Unterkunft",
         "description": {
-          "1": "Wir freuen uns, euch mitteilen zu können, dass eine Übernachtung im Hotel möglich ist. Die Preise für Hochzeitsgäste sind wie folgt:",
-          "2b": "700 PLN/Nacht",
-          "2": "Doppelzimmer",
-          "3b": "300 PLN/Nacht pro Person",
-          "3": "Drei- oder Vierbettzimmer",
-          "4": "Für Gäste, die an einer Übernachtung im Hotel interessiert sind, bitten wir um Kontaktaufnahme mit dem Brautpaar. Die Reservierungen werden von den Hochzeitsorganisatoren vorgenommen, um den ausgehandelten Preis zu gewährleisten. Die Zahlung für den Aufenthalt kann per Banküberweisung auf das vom Brautpaar angegebene Konto, in bar oder per Blik erfolgen.",
-          "5i": "Der Übernachtungspreis kann sich ändern, wenn die Buchung direkt im Hotel vorgenommen wird und nicht über das Brautpaar erfolgt.",
-          "6b": "Check-in:",
-          "6": "15:00",
-          "7b": "Check-out:",
-          "7": "12:00"
+          "intro": "Wir freuen uns, euch mitteilen zu können, dass eine Übernachtung im Hotel möglich ist. Die Preise für Hochzeitsgäste sind wie folgt:",
+          "doubleRoom": "<b>• 700 PLN/Nacht</b> - Doppelzimmer",
+          "largerRoom": "<b>• 300 PLN/Nacht pro Person</b> - Drei- oder Vierbettzimmer",
+          "booking": "Für Gäste, die an einer Übernachtung im Hotel interessiert sind, bitten wir um Kontaktaufnahme mit dem Brautpaar. Die Reservierungen werden von den Hochzeitsorganisatoren vorgenommen, um den ausgehandelten Preis zu gewährleisten. Die Zahlung für den Aufenthalt kann per Banküberweisung auf das vom Brautpaar angegebene Konto, in bar oder per Blik erfolgen.",
+          "note": "Der Übernachtungspreis kann sich ändern, wenn die Buchung direkt im Hotel vorgenommen wird und nicht über das Brautpaar erfolgt.",
+          "checkIn": "<b>Check-in:</b> 15:00",
+          "checkOut": "<b>Check-out:</b> 12:00"
         }
       }
     }
@@ -134,9 +130,7 @@
     },
     "confirmation": {
       "header": "Teilnahmebestätigung",
-      "description2_1": "Bitte bestätigt eure Teilnahme bis zum ",
-      "date": "31. Mai 2027",
-      "description2_2": ", telefonisch."
+      "description": "Bitte bestätigt eure Teilnahme bis zum <b>31. Mai 2027</b>, telefonisch."
     }
   },
   "silesia": {

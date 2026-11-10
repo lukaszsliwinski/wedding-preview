@@ -23,31 +23,27 @@
       "button": "Pokaż mapę"
     },
     "cards": {
-      "1": {
+      "ceremony": {
         "header": "Ceremonia",
         "description": "Sobota, 4.09.2027\no godzinie 15:00\nTaras hotelu\nw Istebnej"
       },
-      "2": {
+      "party": {
         "header": "Wesele",
         "description": "Sobota, 4.09.2027\n15:30 - \u221E\nSala bankietowa hotelu\nw Istebnej"
       },
-      "3": {
+      "hotel": {
         "header": "Hotel"
       },
-      "4": {
+      "accommodation": {
         "header": "Zakwaterowanie",
         "description": {
-          "1": "Z przyjemnością informujemy, że istnieje możliwość rezerwacji noclegu w hotelu. Dla Gości weselnych obowiązuje następująca oferta:",
-          "2b": "700 zł / noc",
-          "2": "pokój dwuosobowy",
-          "3b": "300 zł / noc od osoby",
-          "3": "pokój trzy- lub czteroosobowy",
-          "4": "Osoby zainteresowane noclegiem prosimy o kontakt z Parą Młodą. Rezerwacje będą dokonywane za pośrednictwem organizatorów wesela, aby zagwarantować Państwu wynegocjowane ceny. Opłatę za pobyt można uiścić u Pary Młodej – przelewem na wskazane konto, gotówką lub BLIK\u2011iem.",
-          "5i": "Uwaga: ceny mogą różnić się w przypadku rezerwacji dokonywanych bezpośrednio w hotelu, z pominięciem puli zarezerwowanej przez Parę Młodą.",
-          "6b": "Zameldowanie:",
-          "6": "od 15:00",
-          "7b": "Wymeldowanie:",
-          "7": "do 12:00"
+          "intro": "Z przyjemnością informujemy, że istnieje możliwość rezerwacji noclegu w hotelu. Dla Gości weselnych obowiązuje następująca oferta:",
+          "doubleRoom": "<b>• 700 zł / noc</b> - pokój dwuosobowy",
+          "largerRoom": "<b>• 300 zł / noc od osoby</b> - pokój trzy- lub czteroosobowy",
+          "booking": "Osoby zainteresowane noclegiem prosimy o kontakt z Parą Młodą. Rezerwacje będą dokonywane za pośrednictwem organizatorów wesela, aby zagwarantować Państwu wynegocjowane ceny. Opłatę za pobyt można uiścić u Pary Młodej – przelewem na wskazane konto, gotówką lub BLIK\u2011iem.",
+          "note": "Uwaga: ceny mogą różnić się w przypadku rezerwacji dokonywanych bezpośrednio w hotelu, z pominięciem puli zarezerwowanej przez Parę Młodą.",
+          "checkIn": "<b>Zameldowanie:</b> od 15:00",
+          "checkOut": "<b>Wymeldowanie:</b> do 12:00"
         }
       }
     }
@@ -134,9 +130,7 @@
     },
     "confirmation": {
       "header": "Potwierdzenie obecności",
-      "description2_1": "Prosimy o potwierdzenie swojej obecności do dnia ",
-      "date": "31.05.2027",
-      "description2_2": ", kontaktując się z nami telefonicznie."
+      "description": "Prosimy o potwierdzenie swojej obecności do dnia <b>31.05.2027</b>, kontaktując się z nami telefonicznie."
     }
   },
   "silesia": {

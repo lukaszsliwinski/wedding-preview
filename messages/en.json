@@ -23,31 +23,27 @@
       "button": "Show map"
     },
     "cards": {
-      "1": {
+      "ceremony": {
         "header": "Wedding ceremony",
         "description": "Saturday, 4.09.2027\nat 3:00 PM\nWedding terrace of hotel\nin Istebna"
       },
-      "2": {
+      "party": {
         "header": "Wedding party",
         "description": "Saturday, 4.09.2027\nat 3:30 PM\nWedding hall in hotel\nin Istebna"
       },
-      "3": {
+      "hotel": {
         "header": "Hotel"
       },
-      "4": {
+      "accommodation": {
         "header": "Accommodation",
         "description": {
-          "1": "We are pleased to inform you that accommodation at the hotel is available. The rates for our wedding guests are as follows:",
-          "2b": "700 PLN/night",
-          "2": "double room",
-          "3b": "300 PLN/night per person",
-          "3": "triple or quadruple room",
-          "4": "Guests interested in staying at the hotel are kindly asked to contact Karolina or Valentino. Reservations will be arranged by the wedding organizers to secure the negotiated room rates. Payment for the stay can be made to the Bride and Groom via bank transfer, cash, or BLIK.",
-          "5i": "Please note that room rates may differ if booking directly with the hotel, independent of the reservations arranged by the Bride and Groom.",
-          "6b": "Check in:",
-          "6": "3:00 PM",
-          "7b": "Check out:",
-          "7": "12:00 PM"
+          "intro": "We are pleased to inform you that accommodation at the hotel is available. The rates for our wedding guests are as follows:",
+          "doubleRoom": "<b>• 700 PLN/night</b> - double room",
+          "largerRoom": "<b>• 300 PLN/night per person</b> - triple or quadruple room",
+          "booking": "Guests interested in staying at the hotel are kindly asked to contact Karolina or Valentino. Reservations will be arranged by the wedding organizers to secure the negotiated room rates. Payment for the stay can be made to the Bride and Groom via bank transfer, cash, or BLIK.",
+          "note": "Please note that room rates may differ if booking directly with the hotel, independent of the reservations arranged by the Bride and Groom.",
+          "checkIn": "<b>Check in:</b> 3:00 PM",
+          "checkOut": "<b>Check out:</b> 12:00 PM"
         }
       }
     }
@@ -134,9 +130,7 @@
     },
     "confirmation": {
       "header": "Confirmation of Attendance",
-      "description2_1": "We kindly ask you to confirm your attendance by ", 
-      "date": "May 31, 2027",
-      "description2_2": ", contacting us by phone."
+      "description": "We kindly ask you to confirm your attendance by <b>May 31, 2027</b>, contacting us by phone."
     }
   },
   "silesia": {

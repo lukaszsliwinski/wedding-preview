@@ -123,11 +123,7 @@ export default function WeddingInfo() {
       <FadeInDiv className="flex w-screen justify-center items-center flex-col px-3 xs:px-6 my-6 md:my-16">
         <h3 className="text-header text-2xl md:text-4xl mt-4">{t('confirmation.header')}</h3>
         <p className="flex flex-col max-w-4xl text-center max-sm:text-sm/6 whitespace-pre-wrap mt-4">
-          <span>
-            {t('confirmation.description2_1')}
-            <b>{t('confirmation.date')}</b>
-            {t('confirmation.description2_2')}
-          </span>
+          <span>{t.rich('confirmation.description', { b: (chunks) => <b>{chunks}</b> })}</span>
         </p>
       </FadeInDiv>
     </section>
