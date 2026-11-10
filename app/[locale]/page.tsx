@@ -9,8 +9,8 @@ import Footer from '@/components/sections/Footer';
 export default function HomePage() {
   return (
     <>
-      <Landing />
-      <About />
+      {/* <Landing /> */}
+      {/* <About /> */}
       <Localization />
       <WeddingInfo />
       <Silesia />

@@ -14,18 +14,22 @@
     "header": "Karolina i Valentino",
     "text1": "Mają zaszczyt zaprosić",
     "text_wider": "na uroczystość zaślubin",
-    "text2": "4 września 2027 roku o godz. 15:00\nHotel Złoty Groń w Istebnej"
+    "text2": "4 września 2027 roku o godz. 15:00\nHotel w Istebnej"
   },
   "localization": {
     "header": "Gdzie i kiedy",
+    "map": {
+      "notice": "Mapę dostarcza Google. Jej wczytanie przekazuje do Google dane, m.in. Twój adres IP.",
+      "button": "Pokaż mapę"
+    },
     "cards": {
       "1": {
         "header": "Ceremonia",
-        "description": "Sobota, 4.09.2027\no godzinie 15:00\nTaras hotelu\nZłoty Groń w Istebnej"
+        "description": "Sobota, 4.09.2027\no godzinie 15:00\nTaras hotelu\nw Istebnej"
       },
       "2": {
         "header": "Wesele",
-        "description": "Sobota, 4.09.2027\n15:30 - \u221E\nSala bankietowa hotelu\nZłoty Groń w Istebnej"
+        "description": "Sobota, 4.09.2027\n15:30 - \u221E\nSala bankietowa hotelu\nw Istebnej"
       },
       "3": {
         "header": "Hotel"
@@ -33,7 +37,7 @@
       "4": {
         "header": "Zakwaterowanie",
         "description": {
-          "1": "Z przyjemnością informujemy, że istnieje możliwość rezerwacji noclegu w Hotelu Złoty Groń. Dla Gości weselnych obowiązuje następująca oferta:",
+          "1": "Z przyjemnością informujemy, że istnieje możliwość rezerwacji noclegu w hotelu. Dla Gości weselnych obowiązuje następująca oferta:",
           "2b": "700 zł / noc",
           "2": "pokój dwuosobowy",
           "3b": "300 zł / noc od osoby",

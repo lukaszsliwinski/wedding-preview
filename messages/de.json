@@ -14,18 +14,22 @@
     "header": "Karolina & Valentino",
     "text1": "Wir freuen uns sehr, euch zu unserer Hochzeit einzuladen, die inmitten der malerischen Landschaft der Beskiden stattfinden wird",
     "text_wider": "",
-    "text2": "4. September 2027 um 15:00 Uhr\nHotel Złoty Groń in Istebna, Polen"
+    "text2": "4. September 2027 um 15:00 Uhr\nHotel in Istebna, Polen"
   },
   "localization": {
     "header": "Wo und wann",
+    "map": {
+      "notice": "Die Karte wird von Google bereitgestellt. Beim Laden werden Daten wie eure IP-Adresse an Google übermittelt.",
+      "button": "Karte anzeigen"
+    },
     "cards": {
       "1": {
         "header": "Zeremonie",
-        "description": "Samstag, 4.09.2027\num 15:00 Uhr\nTerrasse des Hotels\nZłoty Groń in Istebna"
+        "description": "Samstag, 4.09.2027\num 15:00 Uhr\nTerrasse des Hotels\nin Istebna"
       },
       "2": {
         "header": "Hochzeit",
-        "description": "Samstag, 4.09.2027\num 15:30 Uhr\nHochzeitssaal des Hotels\nZłoty Groń in Istebna"
+        "description": "Samstag, 4.09.2027\num 15:30 Uhr\nHochzeitssaal des Hotels\nin Istebna"
       },
       "3": {
         "header": "Hotel"
@@ -33,7 +37,7 @@
       "4": {
         "header": "Unterkunft",
         "description": {
-          "1": "Wir freuen uns, euch mitteilen zu können, dass eine Übernachtung im Hotel Złoty Groń möglich ist. Die Preise für Hochzeitsgäste sind wie folgt:",
+          "1": "Wir freuen uns, euch mitteilen zu können, dass eine Übernachtung im Hotel möglich ist. Die Preise für Hochzeitsgäste sind wie folgt:",
           "2b": "700 PLN/Nacht",
           "2": "Doppelzimmer",
           "3b": "300 PLN/Nacht pro Person",

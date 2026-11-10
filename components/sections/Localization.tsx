@@ -2,7 +2,7 @@ import { useTranslations } from 'next-intl';
 
 import enJson from '@/messages/en.json';
 
-import ButtonLink from '@/components/ButtonLink';
+import GoogleMap from '@/components/GoogleMap';
 import SectionHeader from '@/components/shared/SectionHeader';
 import FadeInDiv from '@/components/shared/FadeInDiv';
 import Card from '@/components/shared/Card';
@@ -25,20 +25,10 @@ export default function Localization() {
                 )}
                 {idx === '3' && (
                   <>
-                    <iframe
-                      title="Google map"
-                      className="w-full xs:w-sm sm:w-md md:max-lg:w-full"
-                      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d941.6797186873007!2d18.910612402954314!3d49.56665245580429!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47143da4776360f9%3A0x61ca36d242b8269a!2sZ%C5%82oty%20Gro%C5%84%20Resort%20%26%20Spa%20w%20Istebnej!5e0!3m2!1spl!2spl!4v1762808158899!5m2!1spl!2spl"
-                      width="450"
-                      height="400"
-                      style={{ border: 0 }}
-                      allowFullScreen
-                      loading="lazy"
-                      referrerPolicy="no-referrer-when-downgrade"
-                    ></iframe>
-                    <ButtonLink
-                      label="www.hotelzlotygron.pl"
-                      href="https://www.hotelzlotygron.pl/"
+                    <GoogleMap
+                      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d256.57635166406294!2d18.839040367986875!3d49.59534436232696!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x471417ae50f13b49%3A0x348e3b6c7eece294!2sKiczory!5e0!3m2!1spl!2spl!4v1794305797844!5m2!1spl!2spl"
+                      notice={t('map.notice')}
+                      buttonLabel={t('map.button')}
                     />
                   </>
                 )}
