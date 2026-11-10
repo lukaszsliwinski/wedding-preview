@@ -16,7 +16,7 @@
     "text_wider": "na uroczystość zaślubin",
     "text2": "4 września 2027 roku o godz. 15:00\nHotel w Istebnej"
   },
-  "localization": {
+  "location": {
     "header": "Gdzie i kiedy",
     "map": {
       "notice": "Mapę dostarcza Google. Jej wczytanie przekazuje do Google dane, m.in. Twój adres IP.",

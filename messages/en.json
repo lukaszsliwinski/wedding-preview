@@ -16,7 +16,7 @@
     "text_wider": "",
     "text2": "September 4, 2027 at 03:00 PM\nHotel in Istebna, Poland"
   },
-  "localization": {
+  "location": {
     "header": "Where and When",
     "map": {
       "notice": "The map is provided by Google. Loading it sends data such as your IP address to Google.",

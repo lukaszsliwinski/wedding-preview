@@ -16,7 +16,7 @@
     "text_wider": "",
     "text2": "4. September 2027 um 15:00 Uhr\nHotel in Istebna, Polen"
   },
-  "localization": {
+  "location": {
     "header": "Wo und wann",
     "map": {
       "notice": "Die Karte wird von Google bereitgestellt. Beim Laden werden Daten wie eure IP-Adresse an Google übermittelt.",
