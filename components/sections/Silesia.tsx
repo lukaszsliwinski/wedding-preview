@@ -35,7 +35,7 @@ export default function Silesia() {
                     className="w-[300px] md:w-[350px] mt-3 md:mt-0"
                     width="350"
                     height="350"
-                    alt="silesia photo"
+                    alt={`silesia section photo ${idx}`}
                   />
                 </div>
               </div>

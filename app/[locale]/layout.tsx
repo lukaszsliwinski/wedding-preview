@@ -34,7 +34,7 @@ export const metadata: Metadata = {
     description,
     images: [
       {
-        url: 'https://www.wedding.lukaszsliwinski.pl/screen.png',
+        url: 'https://www.wedding.lukaszsliwinski.pl/screen.jpg',
         width: 1200,
         height: 630,
         alt: 'Landing page wedding website'

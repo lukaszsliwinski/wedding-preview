@@ -91,7 +91,7 @@ export default function WeddingInfo() {
               className="w-[400px] lg:w-[450px]"
               width="450"
               height="600"
-              alt="agenda photo"
+              alt="agenda section photo"
             />
           </div>
         </FadeInDiv>

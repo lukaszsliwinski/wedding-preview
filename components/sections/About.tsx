@@ -21,7 +21,7 @@ export default function About() {
         </FadeInDiv>
         <FadeInDiv className="w-full flex justify-center items-center md:order-first">
           <div className="picture-frame">
-            <Image src="/about.webp" width="400" height="450" alt="our story photo" />
+            <Image src="/about.webp" width="400" height="600" alt="our story photo" />
           </div>
         </FadeInDiv>
       </div>
