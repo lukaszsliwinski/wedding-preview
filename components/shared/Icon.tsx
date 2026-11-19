@@ -3,6 +3,7 @@ interface IconProps {
   className?: string;
 }
 
+// The shape comes from the SVG file (used as a mask) and the color from currentColor, i.e. text-* classes
 export default function Icon({ src, className = '' }: IconProps) {
   const mask = `url(${src}) center / contain no-repeat`;
 

@@ -102,7 +102,7 @@ export default function Landing() {
     }
   };
 
-  // animation queue
+  // animation queue: the text scales up and back while the bar shrinks to fit its content, then the countdown appears
   useEffect(() => {
     (async () => {
       barTextControls.start('visible').then(() => barTextControls.start('standardSize'));

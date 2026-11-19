@@ -20,6 +20,7 @@ const boxVariants: Variants = {
     transition: {
       duration: 0.3,
       ease: cubic,
+      // appears only after the Landing intro animation
       delay: 3,
       when: 'beforeChildren',
       staggerChildren: 0.2,

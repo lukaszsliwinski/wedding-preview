@@ -5,6 +5,7 @@ import * as rootParams from 'next/root-params';
 import { routing } from '@/i18n/routing';
 
 export default getRequestConfig(async () => {
+  // Locale from the [locale] segment of the URL; an unsupported locale returns 404
   const locale = await rootParams.locale();
 
   if (!hasLocale(routing.locales, locale)) {

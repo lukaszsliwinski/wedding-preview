@@ -15,7 +15,7 @@ const subscribe = (onTick: () => void) => {
 // Whole seconds, so the snapshot only changes once per tick
 const getSeconds = () => Math.floor(Date.now() / 1000);
 
-// The server has no current time to show, which keeps hydration consistent
+// The server does not know the visitor's current time, so it returns null and server HTML matches the first render in the browser
 const getServerSeconds = () => null;
 
 export default function useCountdown(target: Date): TimeLeft | null {

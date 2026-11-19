@@ -3,6 +3,7 @@
 @theme inline {
   --breakpoint-xs: 28rem;
 
+  /* Values are set by next/font in layout.tsx */
   --font-inter: var(--font-inter);
   --font-alice: var(--font-alice);
   --font-alex-brush: var(--font-alex-brush);
@@ -23,12 +24,13 @@ h6 {
   font-family: var(--font-alice);
 }
 
+/* Gold frame along the bottom and right edges of a photo */
 .picture-frame {
   position: relative;
   display: inline-block;
 }
 
-/* Bottom frame */
+/* Bottom line */
 .picture-frame::before {
   content: '';
   position: absolute;
@@ -40,7 +42,7 @@ h6 {
   background: var(--color-theme1);
 }
 
-/* Right frame */
+/* Right line */
 .picture-frame::after {
   content: '';
   position: absolute;

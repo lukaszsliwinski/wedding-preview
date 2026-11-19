@@ -4,6 +4,7 @@ import Icon from '@/components/shared/Icon';
 interface CardProps {
   icon?: string;
   title: string;
+  // Fixed header height, so descriptions in a grid of cards start at the same height
   higherHeader?: boolean;
   children: ReactNode;
   className?: string;

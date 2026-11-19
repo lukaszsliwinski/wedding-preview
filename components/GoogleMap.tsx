@@ -10,7 +10,7 @@ interface GoogleMapProps {
 
 const sizeClassName = 'w-full xs:w-sm sm:w-md md:max-lg:w-full h-[400px]';
 
-// The map loads only after a click, so Google receives no visitor data before that.
+// The map loads only after a click, so Google receives no visitor data before that
 export default function GoogleMap({ src, notice, buttonLabel }: GoogleMapProps) {
   const [loaded, setLoaded] = useState(false);
 
@@ -29,6 +29,7 @@ export default function GoogleMap({ src, notice, buttonLabel }: GoogleMapProps) 
     );
   }
 
+  // Only span and button, because the component is rendered inside a <p> where a div is not allowed
   return (
     <span
       className={`${sizeClassName} flex flex-col items-center justify-center bg-background px-6`}

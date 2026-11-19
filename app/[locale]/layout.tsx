@@ -60,6 +60,7 @@ export default async function LocaleLayout({ children }: Props) {
       <body
         className={`${inter.variable} ${alice.variable} ${alexBrush.variable} font-inter text-paragraph tracking-[1] leading-6.5 bg-background`}
       >
+        {/* Only client components need messages in the browser, which here means the countdown in Landing */}
         <NextIntlClientProvider messages={{ landing: messages.landing }}>
           <main className="w-screen">{children}</main>
         </NextIntlClientProvider>

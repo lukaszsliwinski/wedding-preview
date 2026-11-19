@@ -19,6 +19,7 @@ export default function Invitation() {
       </div>
       <p className="flex flex-col text-xs xs:text-sm text-center whitespace-pre-wrap uppercase leading-8 px-8 mb-20">
         <span>{t('text1')}</span>
+        {/* Text with wider letter spacing; only used in PL, empty in EN and DE */}
         <span className="tracking-[4]">{t('text_wider')}</span>
         <span className="inline-block w-px h-8 xs:h-10 bg-black mx-auto my-4 xs:my-5"></span>
         <span className="leading-5">{t('text2')}</span>
